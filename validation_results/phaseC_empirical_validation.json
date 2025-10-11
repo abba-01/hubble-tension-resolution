@@ -1,8 +1,11 @@
 {
+  "DISCLAIMER": "PROOF-OF-CONCEPT ONLY - Uses synthetic diagonal covariance matrices. For validated results with real published data, see validation_summary.json (91% reduction). See CLARIFICATION.md for details.",
   "metadata": {
     "phase": "C_empirical_calibration",
+    "status": "proof_of_concept",
     "date": "2025-10-11T12:34:14.242997",
-    "method": "covariance_based"
+    "method": "covariance_based",
+    "data_source": "synthetic_diagonal_matrices"
   },
   "tensors": {
     "Planck18": [

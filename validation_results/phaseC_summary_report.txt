@@ -2,8 +2,19 @@
 PHASE C: EMPIRICAL TENSOR CALIBRATION - SUMMARY REPORT
 ================================================================================
 
+⚠️  PROOF-OF-CONCEPT DEMONSTRATION - NOT VALIDATED WITH REAL DATA ⚠️
+
+This report shows the methodology pipeline working with simplified synthetic
+covariance matrices. Results demonstrate the FRAMEWORK'S CAPABILITY, not
+actual empirical findings. For validated results, see validation_summary.json
+(91% reduction with published aggregate data).
+
+See CLARIFICATION.md for full details on validated vs. proof-of-concept results.
+
+================================================================================
+
 Date: 2025-10-11T12:34:14.242997
-Method: covariance_based
+Method: covariance_based (synthetic diagonal matrices)
 
 EMPIRICAL TENSORS EXTRACTED:
 --------------------------------------------------------------------------------

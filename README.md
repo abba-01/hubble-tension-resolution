@@ -1,8 +1,12 @@
 # Hubble Tension Bootstrap Validation
 
+**⚠️ IMPORTANT: Read [CLARIFICATION.md](CLARIFICATION.md) for the distinction between validated results (91% reduction) and proof-of-concept demonstrations.**
+
 ## Overview
 
 This package contains the bootstrap validation for the observer-tensor extended N/U algebra framework applied to the Hubble tension problem.
+
+**Validated Result**: 91% reduction (5.40 → 0.48 km/s/Mpc) using published aggregate data.
 
 ## Structure
 
