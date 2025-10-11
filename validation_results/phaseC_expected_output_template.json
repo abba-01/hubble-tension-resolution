@@ -1,0 +1,37 @@
+{
+  "template_version": "1.0",
+  "description": "Expected Phase C output structure",
+  "expected_ranges": {
+    "delta_T_empirical": {
+      "min": 1.0,
+      "max": 1.5,
+      "typical": 1.2
+    },
+    "gap_tensor": {
+      "min": 0.0,
+      "max": 0.5,
+      "typical": 0.15
+    },
+    "reduction_percent": {
+      "min": 85.0,
+      "max": 100.0,
+      "typical": 92.0
+    },
+    "H0_merged": {
+      "min": 68.0,
+      "max": 71.0,
+      "typical": 69.5
+    },
+    "u_merged": {
+      "min": 2.0,
+      "max": 4.0,
+      "typical": 3.0
+    }
+  },
+  "validation_criteria": {
+    "concordance": "gap_tensor < 0.5",
+    "reduction_target": "reduction_percent >= 85.0",
+    "delta_T_valid": "1.0 <= delta_T <= 1.5",
+    "overall": "All three criteria must pass"
+  }
+}

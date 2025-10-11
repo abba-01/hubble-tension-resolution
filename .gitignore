@@ -1,28 +1,21 @@
-# Zenodo package artifacts
-montecarlo/hubble_montecarlo_package2_*/
-montecarlo/*.tar.gz
-montecarlo/*.tar.gz.sha256
-montecarlo/*.zip
-
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
+*.py[cod]
+*$py.class
 *.so
-
-# Virtual environments
-venv/
+.Python
 env/
-ENV/
+venv/
+*.egg-info/
 
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
-*.swo
-*~
+
+# Results (track summary but not large CSVs by default)
+validation_results/*.csv
+!validation_results/.gitkeep
 
 # OS
 .DS_Store

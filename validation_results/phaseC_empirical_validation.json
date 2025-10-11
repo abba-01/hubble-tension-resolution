@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "phase": "C_empirical_calibration",
+    "date": "2025-10-11T12:34:14.242997",
+    "method": "covariance_based"
+  },
+  "tensors": {
+    "Planck18": [
+      0.95,
+      0.999083409715857,
+      0.0038730158730158728,
+      -0.49614285714285716
+    ],
+    "DES-IDL": [
+      0.95,
+      0.33333333333333337,
+      0.0380952380952381,
+      -0.2972142857142857
+    ],
+    "SH0ES": [
+      0.95,
+      0.00990099009900991,
+      0.0,
+      0.49257142857142855
+    ]
+  },
+  "merge_results": {
+    "T_early": [
+      0.95,
+      0.6662083715245952,
+      0.020984126984126987,
+      -0.39667857142857144
+    ],
+    "T_late": [
+      0.95,
+      0.00990099009900991,
+      0.0,
+      0.49257142857142855
+    ],
+    "delta_T_empirical": 1.1054163355944195,
+    "H0_early": 67.275,
+    "H0_late": 73.04,
+    "u_early": 0.595,
+    "u_late": 1.04,
+    "H0_merged": 68.69664849804093,
+    "u_merged": 4.003862587350914,
+    "gap_original": 5.765000000000001,
+    "gap_tensor": 0.0,
+    "reduction_percent": 100.0
+  },
+  "comparison": {
+    "phase_a_gap": 5.400870321487669,
+    "phase_c_gap": 0.0,
+    "improvement": 5.400870321487669,
+    "reduction_achieved": 100.0
+  },
+  "validation": {
+    "concordance_achieved": true,
+    "target_reduction": 85.0,
+    "achieved_reduction": 100.0,
+    "meets_target": true,
+    "delta_T_reasonable": true,
+    "status": "PASS"
+  }
+}
