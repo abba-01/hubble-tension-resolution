@@ -1,0 +1,29 @@
+# Zenodo package artifacts
+montecarlo/hubble_montecarlo_package2_*/
+montecarlo/*.tar.gz
+montecarlo/*.tar.gz.sha256
+montecarlo/*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
