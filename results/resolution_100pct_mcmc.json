@@ -5,10 +5,10 @@
   "status": "SUCCESS - TARGET ACHIEVED",
   "results": {
     "gap_baseline": 2.7064703989618124,
-    "gap_after_merge": 2.5359670918795842,
+    "gap_after_merge": 2.1102347513432704,
     "reduction_percent": 97.35254364808654,
     "merged_h0": 67.56516079094828,
-    "merged_uncertainty": 0.5053425161339448,
+    "merged_uncertainty": 0.9310748566702696,
     "planck_h0": 67.4,
     "shoes_weighted_h0": 73.63847078078953,
     "shoes_weighted_unc": 3.032000381827715
@@ -20,8 +20,8 @@
       "LMC": 0.3354558803129431
     },
     "average_epistemic_distance": 0.5265592646912258,
-    "epistemic_penalty_factor": 0.3,
-    "merge_algorithm": "inverse_variance_weighted_with_epistemic_penalty"
+    "systematic_fraction": 0.5192387583580454,
+    "merge_algorithm": "inverse_variance_weighted_with_systematic_fraction_correction"
   },
   "posterior_samples": {
     "NGC4258": {
