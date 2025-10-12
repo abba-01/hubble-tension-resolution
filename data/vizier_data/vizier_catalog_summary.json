@@ -1,0 +1,20 @@
+{
+  "query_date": "2025-10-12T13:26:46.430770",
+  "catalog_id": "J/ApJ/934/L7",
+  "paper": {
+    "authors": "Riess et al.",
+    "year": 2022,
+    "journal": "ApJ",
+    "volume": 934,
+    "page": "L7",
+    "doi": "10.3847/2041-8213/ac5c5b",
+    "title": "A Comprehensive Measurement of the Local Value of the Hubble Constant"
+  },
+  "tables": [],
+  "h0_measurements": [],
+  "downloaded_files": [],
+  "urls": {
+    "vizier": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/934/L7",
+    "doi": "https://doi.org/10.3847/2041-8213/ac5c5b"
+  }
+}
