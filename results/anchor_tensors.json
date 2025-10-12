@@ -1,0 +1,38 @@
+{
+  "N": {
+    "anchor_code": "N",
+    "anchor_name": "NGC4258",
+    "H0_mean": 72.51041666666667,
+    "H0_uncertainty": 2.549334029321296,
+    "systematic_fraction": 0.0,
+    "P_m": 0.9648418234715064,
+    "0_t": 0.01,
+    "0_m": -0.13598955710330707,
+    "0_a": 0.5,
+    "tensor_magnitude": 0.5182597414821584
+  },
+  "M": {
+    "anchor_code": "M",
+    "anchor_name": "MilkyWay",
+    "H0_mean": 76.13130434782606,
+    "H0_uncertainty": 2.520754380439085,
+    "systematic_fraction": 0.0,
+    "P_m": 0.9668893840446717,
+    "0_t": 0.01,
+    "0_m": -0.21622166990413547,
+    "0_a": 0.5,
+    "tensor_magnitude": 0.5448410874155261
+  },
+  "L": {
+    "anchor_code": "L",
+    "anchor_name": "LMC",
+    "H0_mean": 72.29,
+    "H0_uncertainty": 2.7442128831098525,
+    "systematic_fraction": 0.0,
+    "P_m": 0.9620388313306149,
+    "0_t": 0.01,
+    "0_m": -0.1307126823779531,
+    "0_a": 0.5,
+    "tensor_magnitude": 0.5169001889479627
+  }
+}

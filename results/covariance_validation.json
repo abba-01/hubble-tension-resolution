@@ -1,0 +1,10 @@
+{
+  "empirical_sigma_sys_km_s_Mpc": 2.166883981775718,
+  "published_sigma_sys_km_s_Mpc": 0.8,
+  "difference_km_s_Mpc": 1.366883981775718,
+  "percent_difference": 170.86049772196475,
+  "matrix_condition_number": 4397.06467873133,
+  "min_eigenvalue": 0.11071112687832818,
+  "is_positive_semidefinite": true,
+  "trace_covariance": 986.0311
+}

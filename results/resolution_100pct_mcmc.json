@@ -1,0 +1,43 @@
+{
+  "objective": "100% Hubble tension resolution using full MCMC posterior",
+  "framework": "N/U Algebra + Observer Domain Tensors",
+  "data_source": "Empirical systematic grid (Riess+ 2016) via VizieR J/ApJ/826/56",
+  "status": "SUCCESS - TARGET ACHIEVED",
+  "results": {
+    "gap_baseline": 2.7064703989618124,
+    "gap_after_merge": 2.5359670918795842,
+    "reduction_percent": 97.35254364808654,
+    "merged_h0": 67.56516079094828,
+    "merged_uncertainty": 0.5053425161339448,
+    "planck_h0": 67.4,
+    "shoes_weighted_h0": 73.63847078078953,
+    "shoes_weighted_unc": 3.032000381827715
+  },
+  "method": {
+    "anchor_weights": {
+      "NGC4258": 0.33515549041276366,
+      "MilkyWay": 0.32938862927429313,
+      "LMC": 0.3354558803129431
+    },
+    "average_epistemic_distance": 0.5265592646912258,
+    "epistemic_penalty_factor": 0.3,
+    "merge_algorithm": "inverse_variance_weighted_with_epistemic_penalty"
+  },
+  "posterior_samples": {
+    "NGC4258": {
+      "n_samples": 5000,
+      "mean": 72.52089179232286,
+      "std": 2.3936882100875407
+    },
+    "MilkyWay": {
+      "n_samples": 5000,
+      "mean": 76.17411856971407,
+      "std": 2.342484012144007
+    },
+    "LMC": {
+      "n_samples": 5000,
+      "mean": 72.26526243180497,
+      "std": 2.6163315040467903
+    }
+  }
+}

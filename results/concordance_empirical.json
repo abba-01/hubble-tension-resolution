@@ -1,0 +1,35 @@
+{
+  "N": {
+    "anchor_name": "NGC4258",
+    "H0_late": 72.51041666666667,
+    "uncertainty_late": 2.549334029321296,
+    "Delta_T": 0.5182597414821584,
+    "n_merged": 69.95520833333333,
+    "u_merged": 2.848928624927038,
+    "gap_km_s_Mpc": 2.061082637345365,
+    "reduction_pct": 63.90745814122567,
+    "baseline_gap": 5.710549967386967
+  },
+  "M": {
+    "anchor_name": "MilkyWay",
+    "H0_late": 76.13130434782606,
+    "uncertainty_late": 2.520754380439085,
+    "Delta_T": 0.5448410874155261,
+    "n_merged": 71.76565217391303,
+    "u_merged": 3.8889638679322713,
+    "gap_km_s_Mpc": 5.710549967386967,
+    "reduction_pct": 0.0,
+    "baseline_gap": 5.710549967386967
+  },
+  "L": {
+    "anchor_name": "LMC",
+    "H0_late": 72.29,
+    "uncertainty_late": 2.7442128831098525,
+    "Delta_T": 0.5169001889479627,
+    "n_merged": 69.845,
+    "u_merged": 2.8859274035326954,
+    "gap_km_s_Mpc": 1.6457871168901477,
+    "reduction_pct": 71.17988413919392,
+    "baseline_gap": 5.710549967386967
+  }
+}

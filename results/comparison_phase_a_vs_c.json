@@ -1,0 +1,20 @@
+{
+  "Phase_A": {
+    "method": "published aggregate uncertainties",
+    "gap_km_s_Mpc": 0.48,
+    "reduction_pct": 91.1
+  },
+  "Phase_C": {
+    "method": "empirical covariance from systematic grid",
+    "best_gap_km_s_Mpc": 1.6457871168901477,
+    "worst_gap_km_s_Mpc": 5.710549967386967,
+    "average_gap_km_s_Mpc": 3.1391399072074933,
+    "best_reduction_pct": 71.17988413919392,
+    "worst_reduction_pct": 0.0,
+    "average_reduction_pct": 45.0291140934732
+  },
+  "comparison": {
+    "gap_difference_km_s_Mpc": 2.6591399072074933,
+    "reduction_difference_pct": -46.0708859065268
+  }
+}

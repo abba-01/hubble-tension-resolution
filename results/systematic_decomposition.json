@@ -1,0 +1,95 @@
+{
+  "anchor_analysis": {
+    "All": {
+      "count": 24,
+      "mean_H0": 73.425,
+      "std_H0": 0.8567633735523879,
+      "mean_within_correlation": 0.9219565217391303
+    },
+    "NML": {
+      "count": 24,
+      "mean_H0": 73.19125000000001,
+      "std_H0": 0.8137637329369498,
+      "mean_within_correlation": 0.9219565217391303
+    },
+    "NM": {
+      "count": 23,
+      "mean_H0": 73.99869565217392,
+      "std_H0": 0.8593671262664803,
+      "mean_within_correlation": 0.9252173913043479
+    },
+    "NL": {
+      "count": 23,
+      "mean_H0": 71.9095652173913,
+      "std_H0": 0.6371633033209099,
+      "mean_within_correlation": 0.9252173913043479
+    },
+    "M+L": {
+      "count": 23,
+      "mean_H0": 74.24347826086957,
+      "std_H0": 0.8895177891606241,
+      "mean_within_correlation": 0.9252173913043479
+    },
+    "N": {
+      "count": 24,
+      "mean_H0": 72.51041666666667,
+      "std_H0": 0.8311881446965284,
+      "mean_within_correlation": 0.9219565217391303
+    },
+    "M": {
+      "count": 23,
+      "mean_H0": 76.13130434782606,
+      "std_H0": 0.9882367417312052,
+      "mean_within_correlation": 0.9252173913043479
+    },
+    "L": {
+      "count": 23,
+      "mean_H0": 72.29,
+      "std_H0": 0.8030396797622957,
+      "mean_within_correlation": 0.9252173913043479
+    },
+    "A": {
+      "count": 23,
+      "mean_H0": 74.6704347826087,
+      "std_H0": 1.5777558235465914,
+      "mean_within_correlation": 0.9252173913043479
+    }
+  },
+  "systematic_parameters": {
+    "Anc": [
+      "All",
+      "NML",
+      "NM",
+      "NL",
+      "M+L",
+      "N",
+      "M",
+      "L",
+      "A"
+    ],
+    "Brk": [
+      "Y",
+      "N",
+      "10",
+      "60"
+    ],
+    "Clp": [
+      "1",
+      "G",
+      "I"
+    ],
+    "PL": [
+      "W_H",
+      "H",
+      "W_I"
+    ],
+    "RV": [
+      3.3,
+      2.5
+    ],
+    "Zs": [
+      "Z",
+      "B"
+    ]
+  }
+}

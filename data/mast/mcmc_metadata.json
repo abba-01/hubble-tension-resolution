@@ -1,0 +1,27 @@
+{
+  "source": "empirical_systematic_grid_j_apj_826_56",
+  "method": "multivariate_sampling_from_empirical_covariance",
+  "n_samples_per_anchor": 5000,
+  "seed": 20251012,
+  "anchors": {
+    "N": {
+      "anchor_name": "NGC4258",
+      "mean_h0": 72.52089179232286,
+      "std_h0": 2.3936882100875407,
+      "n_samples": 5000
+    },
+    "M": {
+      "anchor_name": "MilkyWay",
+      "mean_h0": 76.17411856971407,
+      "std_h0": 2.342484012144007,
+      "n_samples": 5000
+    },
+    "L": {
+      "anchor_name": "LMC",
+      "mean_h0": 72.26526243180497,
+      "std_h0": 2.6163315040467903,
+      "n_samples": 5000
+    }
+  },
+  "note": "Samples generated from empirical 210x210 covariance matrix extracted from Riess+ 2016 systematic grid"
+}

@@ -1,0 +1,66 @@
+{
+  "configuration": {
+    "total_samples_per_anchor": 10000,
+    "seed": 20251012,
+    "runtime_seconds": 0.0016160011291503906,
+    "method": "simplified_gaussian_per_anchor"
+  },
+  "coverage": {
+    "overall_average": 0.49429999999999996,
+    "by_anchor": {
+      "N": {
+        "anchor_name": "NGC4258",
+        "coverage_fraction": 0.5267,
+        "samples_within": 5267,
+        "samples_total": 10000
+      },
+      "M": {
+        "anchor_name": "MilkyWay",
+        "coverage_fraction": 0.4237,
+        "samples_within": 4237,
+        "samples_total": 10000
+      },
+      "L": {
+        "anchor_name": "LMC",
+        "coverage_fraction": 0.5325,
+        "samples_within": 5325,
+        "samples_total": 10000
+      }
+    },
+    "is_conservative": false,
+    "target_coverage": 0.95
+  },
+  "tail_statistics": {
+    "N": {
+      "anchor_name": "NGC4258",
+      "p1": 66.61146517161899,
+      "p50": 72.53599770817686,
+      "p99": 78.42118585828784,
+      "lower_bound": 67.10627970840629,
+      "upper_bound": 72.80413695826037,
+      "lower_margin_km_s_Mpc": -0.4948145367873025,
+      "upper_margin_km_s_Mpc": -5.61704890002747
+    },
+    "M": {
+      "anchor_name": "MilkyWay",
+      "p1": 70.21359113111392,
+      "p50": 76.13755891102824,
+      "p99": 82.03608773501875,
+      "lower_bound": 67.87668830598075,
+      "upper_bound": 75.6546160418453,
+      "lower_margin_km_s_Mpc": 2.3369028251331656,
+      "upper_margin_km_s_Mpc": -6.381471693173452
+    },
+    "L": {
+      "anchor_name": "LMC",
+      "p1": 65.77420778095345,
+      "p50": 72.30043828331571,
+      "p99": 78.7174989627727,
+      "lower_bound": 66.95907259646731,
+      "upper_bound": 72.73092740353269,
+      "lower_margin_km_s_Mpc": -1.184864815513862,
+      "upper_margin_km_s_Mpc": -5.986571559240005
+    }
+  },
+  "note": "Simplified validation using anchor-specific Gaussian approximation for computational efficiency"
+}
