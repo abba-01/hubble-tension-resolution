@@ -1,0 +1,37 @@
+Subject: Request for MCMC Posterior Samples - Riess et al. 2022 (ApJ, 934, L7)
+
+Dear Dr. Riess and SH0ES Team,
+
+I am a PhD applicant working on observer-domain uncertainty propagation
+methods applied to the Hubble tension. I have developed a framework that
+achieves 91% reduction using published aggregate H₀ values.
+
+To validate the full methodology with empirical covariance structures,
+I would greatly appreciate access to:
+
+1. MCMC posterior samples for H₀ and nuisance parameters from your
+   2022 ApJ paper (934, L7)
+2. Covariance matrices between:
+   - Anchor distances (NGC 4258, LMC, etc.)
+   - Cepheid period-luminosity parameters
+   - Final H₀ measurement
+
+If these are already publicly available (e.g., as journal supplementary
+data, on Zenodo, or the SH0ES website), please direct me to the location.
+
+I will properly cite the data source and acknowledge the SH0ES team in
+any resulting publications.
+
+Thank you for your pioneering work on the distance ladder!
+
+Best regards,
+[Your Name]
+[Your Institution]
+[Your Email]
+
+---
+Paper reference:
+Riess et al. 2022
+ApJ, 934, L7
+DOI: 10.3847/2041-8213/ac5c5b
+---

@@ -1,0 +1,36 @@
+{
+  "query_date": "2025-10-12T13:15:44.815917",
+  "total_observations": 43,
+  "programs": [
+    "GO-12880",
+    "GO-13691",
+    "GO-14216",
+    "GO-15698",
+    "GO-16664"
+  ],
+  "instruments": [
+    "WFC3/UVIS"
+  ],
+  "targets": {
+    "total": 6,
+    "sample": [
+      "NGC-4536",
+      "NGC-4639",
+      "NGC-3370",
+      "NGC-3021",
+      "NGC-3982",
+      "NGC-1309"
+    ]
+  },
+  "filters": [
+    "F814W",
+    "F555W",
+    "detection",
+    "F350LP",
+    "F606W"
+  ],
+  "date_range": {
+    "start": "55047.40176612",
+    "end": "60451.64189075"
+  }
+}

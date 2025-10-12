@@ -20,3 +20,7 @@ validation_results/*.csv
 # OS
 .DS_Store
 Thumbs.db
+*.tar.gz
+data/riess2022_data/fig*
+data/riess2022_data/*.cls
+data/riess2022_data/*.bst

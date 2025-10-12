@@ -1,0 +1,68 @@
+{
+  "query_date": "2025-10-12T13:15:44.783934",
+  "total_observations": 2870,
+  "programs": [
+    "GO-12880",
+    "GO-13691",
+    "GO-14216",
+    "GO-15698",
+    "GO-16664"
+  ],
+  "instruments": [
+    "ACS/WFC",
+    "WFC3/IR",
+    "WFC3/UVIS"
+  ],
+  "targets": {
+    "total": 72,
+    "sample": [
+      "ANY",
+      "N5917-IR",
+      "N1448",
+      "N3447",
+      "N1015",
+      "N4424",
+      "N7250",
+      "U9391",
+      "N1365",
+      "M101F1",
+      "M101F2",
+      "N5917",
+      "N3370",
+      "N3021",
+      "N1309",
+      "SCULPTOR-FIELD4",
+      "NGC-4526",
+      "IC-1613-FIELD1",
+      "NGC-1448",
+      "NGC-4536"
+    ]
+  },
+  "filters": [
+    "F555W",
+    "F160W",
+    "F814W",
+    "F350LP",
+    "detection",
+    "DETECTION",
+    "F814W;F350LP;F555W",
+    "F350LP;F555W",
+    "F814W;F350LP",
+    "F814W;F555W",
+    "F160W;F350LP;F555W",
+    "F160W;F350LP",
+    "F606W",
+    "F110W",
+    "F814W;F606W",
+    "F160W;F110W",
+    "F125W",
+    "F160W;F125W",
+    "G141",
+    "F126N",
+    "F438W"
+  ],
+  "date_range": {
+    "start": "56275.9076",
+    "end": "59997.43407359"
+  }
+}

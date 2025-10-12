@@ -1,0 +1,33 @@
+{
+  "search_date": "2025-10-12T13:18:42.005232",
+  "paper": {
+    "title": "A Comprehensive Measurement of the Local Value of the Hubble Constant",
+    "authors": "Riess et al.",
+    "journal": "ApJ",
+    "volume": 934,
+    "page": "L7",
+    "year": 2022,
+    "doi": "10.3847/2041-8213/ac5c5b",
+    "ads": "2022ApJ...934L...7R"
+  },
+  "data_sources_checked": [
+    "ApJ supplementary data portal",
+    "Zenodo repository",
+    "SH0ES team website",
+    "VizieR catalog",
+    "arXiv source files"
+  ],
+  "recommended_actions": [
+    "Visit ApJ suppdata URL in browser",
+    "Check VizieR catalog J/ApJ/934/L7",
+    "Extract arXiv source tarball (if contains data)",
+    "Contact authors directly using template"
+  ],
+  "urls": {
+    "doi": "https://doi.org/10.3847/2041-8213/ac5c5b",
+    "apj": "https://iopscience.iop.org/article/10.3847/2041-8213/ac5c5b",
+    "arxiv": "https://arxiv.org/abs/2112.04510",
+    "vizier": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/934/L7",
+    "shoes": "https://sites.google.com/view/shoes-h0"
+  }
+}
