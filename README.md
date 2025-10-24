@@ -1,6 +1,6 @@
 # Hubble Tension Bootstrap Validation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17435574.svg)](https://doi.org/10.5281/zenodo.17435574)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17435578.svg)](https://doi.org/10.5281/zenodo.17435578)
 
 **⚠️ IMPORTANT: Read [CLARIFICATION.md](CLARIFICATION.md) for the distinction between validated results (91% reduction) and proof-of-concept demonstrations.**
 
