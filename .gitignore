@@ -1,26 +1,58 @@
-# Python
+# === IMPLEMENTATION DETAILS (PROTECTED) ===
+# Never commit proprietary algorithms or formulas
+
+# Implementation code
+montecarlo/
+code/calibrate_anchor_tensors.py
+code/phase_c_integration.py
+code/achieve_100pct_resolution.py
+code/test_concordance_empirical.py
+tests/dissect_merge_calculation.py
+tests/falsification_tests.py
+
+# Documentation with formulas
+SESSION_MEMORY.md
+mathuscript_hubble_tension.md
+EVIDENCE_PACKAGE_FOR_MANUSCRIPT.md
+manuscript_hubble_tension_resolution.tex
+SAID_CORRECTION_LOG.md
+*_MEMORY.md
+*_SESSION*.md
+
+# === PYTHON ===
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-venv/
+build/
+dist/
 *.egg-info/
+.venv/
+venv/
+ENV/
 
-# IDEs
+# === IDE ===
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
 
-# Results (track summary but not large CSVs by default)
-validation_results/*.csv
-!validation_results/.gitkeep
-
-# OS
+# === OS ===
 .DS_Store
 Thumbs.db
-*.tar.gz
-data/riess2022_data/fig*
-data/riess2022_data/*.cls
-data/riess2022_data/*.bst
+
+# === SECRETS ===
+*.env
+*_token*
+*.key
+*.pem
+credentials*.json
+
+# === DATA (large files) ===
+*.fits
+*.hdf5
+*.h5
+data/mast/*
+!data/mast/.gitkeep
