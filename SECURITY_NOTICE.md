@@ -12,7 +12,7 @@ The following files and directories have been removed from public tracking to pr
 
 ### **Implementation Code**
 - `montecarlo/` - Complete Monte Carlo calibration implementation
-- `code/calibrate_anchor_tensors.py` - Tensor calibration algorithms
+- `code/calibrate_anchor_tensors.py` - Proprietary calibration algorithms
 - `code/phase_c_integration.py` - Integration algorithms
 - `code/achieve_100pct_resolution.py` - Resolution algorithms
 - `code/test_concordance_empirical.py` - Testing implementations

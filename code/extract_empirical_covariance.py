@@ -321,5 +321,5 @@ print(f"📈 Top 3 modes explain: {100*cumulative_variance[2]:.1f}% of variance"
 print(f"✅ Validation: empirical σ_sys = {empirical_sigma_sys:.2f} km/s/Mpc")
 print(f"   (published: {published_sigma_sys:.2f} km/s/Mpc, diff: {100*abs(empirical_sigma_sys - published_sigma_sys)/published_sigma_sys:.1f}%)")
 print("=" * 80)
-print("✅ Ready for anchor tensor calibration (TASK 3)")
+print("✅ Ready for proprietary calibration (TASK 3)")
 print("=" * 80)
