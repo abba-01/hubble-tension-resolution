@@ -56,3 +56,4 @@ credentials*.json
 *.h5
 data/mast/*
 !data/mast/.gitkeep
+research/
