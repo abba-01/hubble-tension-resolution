@@ -1,0 +1,38 @@
+=== CSV Files ===
+./02_hubble_analysis/probe_data.csv
+./02_hubble_analysis/observer_tensors.csv
+./02_hubble_analysis/pairwise_tensions.csv
+./05_systematic_budget/operator_catalog.csv
+./montecarlo/tensor_evolution/convergence_trace.csv
+./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/convergence_trace.csv
+./montecarlo/hubble_montecarlo_package2_20251011/mcmc_chains/des_mock_chain.csv
+./montecarlo/hubble_montecarlo_package2_20251011/mcmc_chains/shoes_mock_chain.csv
+./montecarlo/hubble_montecarlo_package2_20251011/mcmc_chains/planck_mock_chain.csv
+./montecarlo/hubble_montecarlo_package2_20251011/mcmc_chains/chain_statistics.csv
+./montecarlo/mcmc_chains/des_mock_chain.csv
+./montecarlo/mcmc_chains/shoes_mock_chain.csv
+./montecarlo/mcmc_chains/planck_mock_chain.csv
+./montecarlo/mcmc_chains/chain_statistics.csv
+./montecarlo/validation_results/package1_vs_package2.csv
+./03_uha_framework/anchor_catalog.csv
+./03_uha_framework/hosts_subset.csv
+./data/shoes_data/shoes_observations_full.csv
+./data/vizier_data/J_ApJ_826_56_table1.csv
+./data/vizier_data/J_ApJ_896_L43_table2.csv
+./data/vizier_data/J_ApJ_940_64_table2.csv
+./data/vizier_data/J_ApJ_876_85_table1.csv
+./data/vizier_data/J_ApJ_826_56_table2.csv
+./data/vizier_data/J_ApJ_876_85_table2.csv
+./data/vizier_data/J_ApJ_826_56_table3.csv
+./data/vizier_data/J_ApJ_896_L43_table1.csv
+./data/vizier_data/J_ApJ_940_64_table1.csv
+./data/vizier_data/J_ApJ_940_64_table3.csv
+./results/phase_b_per_object_contributions.csv
+./validation_results/bootstrap_samples.csv
+
+=== DAT Files ===
+
+=== FITS Files ===
+
+=== TXT Data Files ===
+./data/riess2022_data/data_request_email_template.txt

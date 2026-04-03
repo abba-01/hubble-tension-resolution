@@ -1,0 +1,61 @@
+Script -> Output Mapping
+======================
+
+Script: ./code/achieve_100pct_resolution.py
+Writes to:
+379:    json.dump(results, f, indent=2)
+
+Script: ./code/bootstrap_validation.py
+Writes to:
+80:    checksum = sha256(json.dumps(probes, sort_keys=True).encode()).hexdigest()
+235:        json.dump(summary, f, indent=2)
+248:        "checksum_summary": sha256(json.dumps(summary).encode()).hexdigest()[:12]
+
+Script: ./code/calibrate_anchor_tensors.py
+Writes to:
+235:    json.dump(anchor_tensors, f, indent=2)
+241:    json.dump(cross_distances, f, indent=2)
+
+Script: ./code/extract_empirical_covariance.py
+Writes to:
+274:    json.dump(eigenspectrum, f, indent=2)
+287:    json.dump(systematic_decomp, f, indent=2)
+304:    json.dump(validation, f, indent=2)
+
+Script: ./code/generate_publication_figures.py
+Writes to:
+
+Script: ./code/mast_mcmc_download.py
+Writes to:
+150:    json.dump(metadata, f, indent=2)
+
+Script: ./code/monte_carlo_validation_fast.py
+Writes to:
+156:    json.dump(mc_results, f, indent=2)
+
+Script: ./code/monte_carlo_validation.py
+Writes to:
+270:    json.dump(mc_results, f, indent=2)
+
+Script: ./code/phase_b_create_figure.py
+Writes to:
+
+Script: ./code/phase_b_raw_sn_processing.py
+Writes to:
+328:    json.dump(results, f, indent=2)
+
+Script: ./code/phase_c_integration.py
+Writes to:
+349:            json.dump(results, f, indent=2)
+373:            json.dump(template, f, indent=2)
+
+Script: ./code/test_concordance_empirical.py
+Writes to:
+193:    json.dump(concordance_results, f, indent=2)
+220:    json.dump(comparison, f, indent=2)
+
+Script: ./code/verify_data_integrity.py
+Writes to:
+157:    json.dump(inventory, f, indent=2)
+164:    json.dump(anchor_stats, f, indent=2)
+

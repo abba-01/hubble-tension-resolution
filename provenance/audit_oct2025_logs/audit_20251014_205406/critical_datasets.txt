@@ -1,0 +1,14 @@
+=== NGC 4258 Cepheid Data ===
+
+=== R22 (Riess 2022) Data ===
+./data/riess2022_data
+./data/vizier_riess2022_query.py
+./data/get_riess2022_data.py
+
+=== Anchor Data ===
+./03_uha_framework/anchor_catalog.csv
+./results/anchor_tensors.json
+./results/cross_anchor_distances.json
+./results/anchor_summary_stats.json
+
+=== Cepheid Catalogs ===

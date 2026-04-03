@@ -1,0 +1,72 @@
+======================================================================
+PRE-FLIGHT VALIDATION - Source File Verification
+======================================================================
+Timestamp: 2025-10-14 23:44:01
+
+Checking source directories...
+  ✓ Main repository
+  ✓ MAST data directory
+
+Phase A Scripts:
+  ✓ calibrate_anchor_tensors.py
+
+Phase B Scripts:
+  ✓ phase_b_raw_sn_processing.py
+  ✓ phase_b_create_figure.py
+
+Phase C Scripts:
+  ✓ extract_empirical_covariance.py
+  ✓ phase_c_integration.py
+
+Phase D Scripts:
+  ✓ achieve_100pct_resolution.py
+
+Validation Scripts:
+  ✓ extract_real_cepheid_h0.py (MAST)
+  ✓ test_epistemic_unit_hypothesis.py (MAST)
+  ✓ download_raw_cepheid_data.py (MAST)
+  ✓ extract_literature_anchors.py (MAST)
+  ✓ download_all_anchors.py (MAST)
+  ✓ bootstrap_validation.py
+  ✓ test_concordance_empirical.py
+  ✓ monte_carlo_validation.py
+  ✓ monte_carlo_validation_fast.py
+
+Utility Scripts:
+  ✓ generate_publication_figures.py
+  ✓ N/U Algebra module
+
+Data Files:
+  ✓ Cepheid catalog (Macri+ 2009)
+  ✓ Cepheid catalog (Riess+ 2011)
+  ✓ Cepheid catalog (Riess+ 2016)
+  ✓ SH0ES systematic grid
+
+Reference Results:
+  ✓ definitive_un_test_results.json
+  ✓ expanded_anchor_analysis.json
+  ✓ anchor_h0_original.json
+  ✓ resolution_100pct_mcmc.json
+
+SAID Documentation:
+  ✓ COMPLETE_SESSION_LOG_2025-10-12.md (repo root)
+  ✓ SESSION_MEMORY.md (repo root)
+  ✓ STATUS_2025-10-13.md (repo root)
+  ✓ SAID_CORRECTION_LOG.md (repo root)
+  ✓ CORRECTION_SUMMARY.txt (repo root)
+  ✓ audit_phase_d_10142025.txt (optional)
+
+Calculating total size to copy...
+  Total size to copy: 0 MB
+
+======================================================================
+VALIDATION SUMMARY
+======================================================================
+Total files checked: 30
+Files found: 30
+Files missing: 0
+
+✓ VALIDATION PASSED - All required files found
+
+Ready to proceed with consolidation.
+Run: bash consolidate_simple.sh

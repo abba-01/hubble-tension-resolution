@@ -1,0 +1,28 @@
+=== Data Source Comments from Python Scripts ===
+
+File: ./code/achieve_100pct_resolution.py
+
+File: ./code/bootstrap_validation.py
+
+File: ./code/calibrate_anchor_tensors.py
+
+File: ./code/extract_empirical_covariance.py
+
+File: ./code/generate_publication_figures.py
+
+File: ./code/mast_mcmc_download.py
+
+File: ./code/monte_carlo_validation_fast.py
+
+File: ./code/monte_carlo_validation.py
+
+File: ./code/phase_b_create_figure.py
+
+File: ./code/phase_b_raw_sn_processing.py
+
+File: ./code/phase_c_integration.py
+
+File: ./code/test_concordance_empirical.py
+
+File: ./code/verify_data_integrity.py
+

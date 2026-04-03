@@ -1,0 +1,12 @@
+Phase A Scripts:
+
+Phase B Scripts:
+./code/phase_b_create_figure.py
+./code/phase_b_raw_sn_processing.py
+
+Phase C Scripts:
+./code/phase_c_integration.py
+
+Phase D Scripts:
+./code/achieve_100pct_resolution.py
+

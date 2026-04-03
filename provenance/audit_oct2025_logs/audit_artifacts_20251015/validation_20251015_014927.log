@@ -1,0 +1,7 @@
+=======================================================================
+Pre-Flight Validation
+=======================================================================
+Started: 2025-10-15 01:49:27
+
+Checking Phase Scripts...
+  ✗ MISSING: /run/media/root/OP01/got/hubble/scripts/run_phase_c.sh
