@@ -1,0 +1,22 @@
+ /scratch/repos/hubble-tension-resolution/
+  ├── code/                                                                                                                   
+  │   ├── gaia_xi_test.py        # Chapter 0
+  │   ├── rsd_xi_test.py         # Chapter 1 (consensus)                                                                      
+  │   ├── rsd_xi_methods.py      # Chapter 1 (pre-consensus methods)                                                          
+  │   ├── s8_xi_test.py          # Chapter 2
+  │   ├── bao_xi_test.py         # Chapter 3                                                                                  
+  │   └── omega_m_synthesis.py   # All synthesis figures                                                                    
+  ├── figures/                                                                                                                
+  │   ├── gaia_xi_test.png                                                                                                  
+  │   ├── rsd_xi_test.png / rsd_xi_methods.png                                                                                
+  │   ├── s8_xi_test.png                                                                                                    
+  │   ├── bao_xi_test.png                                                                                                     
+  │   ├── omega_m_synthesis.png  ← smoking gun figure
+  │   ├── sig8_synthesis.png                                                                                                  
+  │   └── audit_summary_4panel.png                                                                                          
+  └── manuscript/                                                                                                             
+      ├── manuscript_data.json   ← SSOT for all key numbers                                                                 
+      └── paper_outline.md       ← this document                                                                              
+                                                                                                                              
+✻ Cogitated for 53s                                                                                                           
+                          
