@@ -1,0 +1,21 @@
+{
+  "n_samples": 10000,
+  "random_seed": 20251012,
+  "merged_interval": [
+    65.7421,
+    74.2541
+  ],
+  "early_containment": 0.9978,
+  "late_containment": 0.7859,
+  "both_containment": 0.7843,
+  "early_mean_interval": [
+    66.92679653934648,
+    67.7194205284511
+  ],
+  "late_mean_interval": [
+    71.74506002764598,
+    73.55178542371182
+  ],
+  "status": "\u2717 POOR",
+  "interpretation": "Significant mismatch between deterministic and probabilistic"
+}

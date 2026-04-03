@@ -1,0 +1,11 @@
+[2025-10-12 20:44:23] Starting data acquisition
+[2025-10-12 20:44:23] Base directory: /root/hubble_tension_data
+[2025-10-12 20:44:23] Downloading Planck chains (~500 MB)...
+--2025-10-12 20:44:23--  https://pla.esac.esa.int/pla/aio/product-action?COSMOLOGY.FILE_ID=COM_CosmoParams_fullGrid_R3.01.tar.gz
+Resolving pla.esac.esa.int (pla.esac.esa.int)... 193.147.153.153
+Connecting to pla.esac.esa.int (pla.esac.esa.int)|193.147.153.153|:443... connected.
+HTTP request sent, awaiting response... 500 
+2025-10-12 20:44:25 ERROR 500: (no description).
+
+[2025-10-12 20:44:25] ✓ Planck download complete
+[2025-10-12 20:44:25] Extracting Planck chains...

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-10-15T19:15:15.674896",
+  "measurements": {
+    "planck": {
+      "H0": 67.4,
+      "u": 0.5,
+      "source": "published"
+    },
+    "shoes": {
+      "H0": 73.04,
+      "u": 1.04,
+      "source": "published"
+    }
+  },
+  "tensors": {
+    "planck": [
+      0.9925816023738873,
+      0.95,
+      0.0,
+      -0.5
+    ],
+    "shoes": [
+      0.9857612267250822,
+      0.05,
+      -0.05,
+      0.5
+    ]
+  },
+  "epistemic_distance": {
+    "original": 1.076,
+    "empirical": 1.346308477847477
+  },
+  "resolution": {
+    "original": {
+      "gap": 0.04979999999999052,
+      "pct": 99.07777777777795
+    },
+    "empirical": {
+      "gap": 0.0,
+      "pct": 100.0
+    }
+  }
+}

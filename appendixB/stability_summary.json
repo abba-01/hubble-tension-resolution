@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-12T21:32:24.714258",
+  "random_seed": 20251012,
+  "software_versions": {
+    "python": "3.12.9 (main, Aug 14 2025, 00:00:00) [GCC 14.2.1 20250110 (Red Hat 14.2.1-7)]",
+    "numpy": "1.26.4",
+    "pandas": "2.2.1",
+    "matplotlib": "3.10.6"
+  },
+  "sensitivity_analysis": {
+    "critical_deltaT": 1.1,
+    "empirical_deltaT": 1.3477,
+    "stability_margin_percent": 22.518181818181798,
+    "status": "\u2713 ROBUST",
+    "numerical_target_met": true
+  },
+  "monte_carlo_validation": {
+    "n_samples": 10000,
+    "concordance_frequency": 0.7843,
+    "status": "\u2717 POOR",
+    "numerical_target_met": false
+  },
+  "numerical_targets": {
+    "critical_deltaT_range": [
+      1.08,
+      1.12
+    ],
+    "critical_deltaT_achieved": 1.1,
+    "target_met": true,
+    "stability_margin_target": 20.0,
+    "stability_margin_achieved": 22.518181818181798,
+    "mc_frequency_target": 0.95,
+    "mc_frequency_achieved": 0.7843
+  },
+  "overall_verdict": "REQUIRES_REFINEMENT",
+  "all_targets_met": false
+}

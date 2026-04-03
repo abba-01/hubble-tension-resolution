@@ -1,0 +1,25 @@
+{
+  "wmap9_tensor": [
+    0.9869271656371211,
+    0.85,
+    0.0,
+    -0.4
+  ],
+  "epistemic_distances": {
+    "wmap9_shoes": 1.2065173123589397,
+    "planck_shoes": 1.3477226754788982,
+    "wmap9_planck": 0.14153508769809928
+  },
+  "merged_uncertainty": {
+    "original_planck": 4.26,
+    "wmap9_based": 3.878662608931848,
+    "difference_km_s_Mpc": -0.3813373910681519
+  },
+  "wmap9_parameters": {
+    "H0": 69.61,
+    "H0_err": 0.91,
+    "Omega_m": 0.285,
+    "Omega_Lambda": 0.715,
+    "source": "WMAP9+BAO+H0"
+  }
+}
