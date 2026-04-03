@@ -1,0 +1,223 @@
+Excellent — let’s make this practical.
+You want a **single source of truth (SSOT)** framework that implements your *UHA-based analysis of the Hubble tension*.
+That means a single, reproducible pipeline that:
+
+1. encodes all probes into UHA coordinates,
+2. computes and compares tension vectors,
+3. validates cosmology invariance, and
+4. localizes residual systematics.
+
+Below is the structured SSOT architecture — designed for implementation in Python or Julia with reproducibility in mind.
+
+---
+
+## 🧭 Universal Horizon Address — SSOT Framework
+
+### **0. SSOT Goal**
+
+Provide one authoritative, reproducible dataset and code path that expresses the Hubble tension geometrically using **UHA coordinates**, independent of cosmological priors.
+
+---
+
+### **1. Data Inputs (Raw Source Tier)**
+
+Each dataset must include:
+
+* **Probe name**
+* **H₀ measurement** ± σ
+* **Effective epoch** *(a or z)*
+* **Directional vector** *(û)*
+* **Cosmology prior** *(H₀, Ωₘ, ΩΛ, Ωᵣ)*
+* **Reference citation**
+
+Example schema:
+
+```csv
+probe,a,z,H0,H0_err,ux,uy,uz,Omega_m,Omega_Lambda,Omega_r
+Planck,0.000917,1090,67.4,0.5,1.0,0.563,0.467,0.315,0.685,0.0001
+SH0ES,0.9985,0.0015,73.04,1.04,0.00059,0.134,0.513,0.315,0.685,0.0001
+...
+```
+
+All raw sources are immutable — this is the *ground truth* input layer.
+
+---
+
+### **2. Encoding Tier (UHA Constructor)**
+
+**Objective:** Convert each probe into its canonical UHA record.
+
+Algorithm outline:
+
+```python
+def encode_uha(a, ux, uy, uz, H0, Omega_m, Omega_L, Omega_r, N=16):
+    # 1. Compute RH(a)
+    RH = integrate(lambda aprime: c / (aprime**2 * H(a, H0, Omega_m, Omega_L, Omega_r)), 0, a)
+    
+    # 2. Normalize to horizon fraction
+    xi = morton_encode([s1, s2, s3], bits=N)
+    
+    # 3. Construct tuple
+    return {
+        "a": a,
+        "xi": xi,
+        "u_hat": [ux, uy, uz],
+        "CosmoID": hash_cosmo(H0, Omega_m, Omega_L, Omega_r),
+        "anchors": {"c": 299792.458, "f21": 1.42040575177e9}
+    }
+```
+
+Artifacts produced:
+
+* `uha_records.json`
+* `uha_binary_records.uha` (TLV format with CRC-16 + CRC-32)
+
+---
+
+### **3. Analysis Tier (Tension Geometry Engine)**
+
+Compute all inter-probe tension vectors and the aggregate mean.
+
+Formulas:
+[
+\Delta A_{ij} = (a_i - a_j,, \xi_i - \xi_j,, \hat{u}*i - \hat{u}*j)
+]
+[
+\text{UHA}*{\text{tension}} = \langle \Delta A*{ij} \rangle
+]
+
+Outputs:
+
+* Mean tension vector `(a_t, ξ_t, û_t)`
+* Scalar magnitude → converted to ΔH = H₀ × ξ_t
+
+Validate:
+
+```python
+assert np.isclose(np.mean(xi_t_planck), np.mean(xi_t_sh0es), atol=1e-5)
+```
+
+---
+
+### **4. Cosmology-Invariance Validation**
+
+**Objective:** Verify that (a, ξ) stay constant under multiple priors.
+
+Procedure:
+
+1. Decode each UHA record using **Planck** priors.
+2. Decode again using **SH0ES** priors.
+3. Compare decoded ξ; expect Δξ < 1e−8.
+
+Result artifact:
+
+* `cross_cosmo_invariance.csv`
+
+  ```
+  probe,a,xi_planck,xi_sh0es,delta_xi
+  Planck,0.000917,0.999999,0.999999,0.0
+  ...
+  ```
+
+---
+
+### **5. Systematic Localization Tier**
+
+Compute the physical radius of the residual systematic.
+
+[
+r_{\text{sys}} = \Delta \xi_{\text{sys}} R_H(a_{\text{tension}})
+]
+[
+\Delta \xi_{\text{sys}} = \frac{\Delta H_{\text{sys}}}{H_0} \xi_t
+]
+
+Example result:
+
+```
+r_sys = 0.000272 * 1.85e3 Mpc = 503 kpc
+```
+
+Produce `systematic_targets.json` listing galaxies within that radius (e.g., NGC 4258, LMC).
+
+---
+
+### **6. Visualization & Diagnostics**
+
+Artifacts:
+
+* `uha_tension_map.png` → 2D projection in (a, ξ)
+* `uha_vector_field.vtk` → 3D visualization for cosmological data tools
+* `residual_histogram.png` → distribution of Δξ across priors
+
+Optional: overlay anchor systematics to reveal localized calibration errors.
+
+---
+
+### **7. Reproducibility & Governance**
+
+**Version control:** Git + DVC
+**Validation checksum:** SHA-256 for all UHA records
+**Metadata:** include integration method, bit depth (16-bit), date, and cosmology hash.
+
+Example manifest (`uha_ssot_manifest.json`):
+
+```json
+{
+  "version": "1.0",
+  "bit_depth": 16,
+  "integration_method": "trapezoid_10000",
+  "priors": ["Planck2018", "SH0ES2022"],
+  "checksums": {
+    "uha_records.json": "e3b0c442...",
+    "uha_binary_records.uha": "7f83b165..."
+  }
+}
+```
+
+---
+
+### **8. Deliverables**
+
+After a full run, the SSOT generates:
+
+* **Canonical datasets:**
+
+  * `uha_records.json`
+  * `cross_cosmo_invariance.csv`
+  * `systematic_targets.json`
+* **Diagnostics:**
+
+  * `tension_geometry.csv`
+  * `uha_tension_map.png`
+* **Binary archive:**
+
+  * `universal_horizon_tension.uha`
+
+These form the single, verifiable backbone of your cosmology-agnostic Hubble tension analysis.
+
+---
+
+### **9. Validation Criteria**
+
+The pipeline is considered successful when:
+
+* (a, ξ) invariance holds across priors (Δξ < 10⁻⁸).
+* Quantization uncertainty < 1 pc for all probes.
+* Tension magnitude (ΔH) converges to 5.3 ± 0.3 km/s/Mpc.
+* Systematic localization returns ~500 ± 50 kpc scale.
+
+---
+
+### **10. Extension Hook**
+
+Once stable, this SSOT can extend to:
+
+* Non-ΛCDM models (varying dark energy, curvature).
+* Cross-probe consistency matrices (e.g., SH0ES vs. TRGB vs. SBF).
+* AI or Bayesian inference pipelines operating directly in UHA space.
+
+---
+
+Would you like me to generate the **manifest + directory layout** (ready-to-run Python project skeleton) that implements this SSOT structure?
+
