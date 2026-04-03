@@ -1,0 +1,53 @@
+# Consolidation Provenance - Enhanced
+timestamp: 2025-10-14 23:47:12
+script_version: "Simple + CI/CD (Enhanced)"
+
+credits:
+  base_structure: "Claude (Sonnet 4.5)"
+  verification_corrections: "ClaudeCode"
+  validation: "GPT-5"
+
+environment:
+  hostname: edm.ericdmartin.com
+  username: root
+  os: Linux
+  os_version: 6.12.0-55.38.1.el10_0.x86_64
+  architecture: x86_64
+  python_path: /usr/bin/python3
+  git_user_name: Consolidation Script
+  git_user_email: consolidation@hubble-tension.local
+  disk_space_available: 216G
+  working_directory: /run/media/root/OP01/hubble-tension-resolution
+
+software_versions:
+  bash: GNU bash, version 5.2.26(1)-release (x86_64-redhat-linux-gnu)
+  python: Python 3.12.9
+  git: git version 2.47.3
+  make: GNU Make 4.4.1
+
+paths:
+  source_repo: /run/media/root/OP01/got/hubble
+  source_mast: /run/media/root/OP01/got/hubble_data/mast_anchors
+  target_repo: /run/media/root/OP01/hubble-tension-resolution
+
+file_counts:
+  scripts_found: 
+  validation_found: 
+  data_found: 
+  note: "Counts from consolidation log, 'N/A' if log not found"
+
+verification:
+  manifest: "SAID/audit_logs/repo_manifest_20251014_234712.txt"
+  source_checksums: "SAID/verification/source_*_checksums_*.txt"
+
+notes: |
+  Clean repository created via multi-stage process:
+  1. validate_sources.sh - verified all source files
+  2. consolidate_simple.sh - copied files with correct paths
+  3. add_cicd.sh - added CI/CD features (enhanced version)
+
+  All enhancements applied:
+  - Enhanced provenance metadata
+  - Improved reproducibility test with actual comparison logic
+  - Complete logging across all scripts
+  - Full documentation copied

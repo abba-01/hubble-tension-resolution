@@ -1,0 +1,86 @@
+.
+├── add_cicd_20251014_234712.log
+├── consolidation_20251014_234433.log
+├── consolidation_20251014_234639.log
+├── data
+│   ├── cepheid_catalogs
+│   │   ├── cepheid_catalog_J_ApJ_699_539_table1.csv
+│   │   ├── cepheid_catalog_J_ApJ_730_119_table0.csv
+│   │   └── cepheid_catalog_J_ApJ_826_56_table1.csv
+│   └── shoes_systematic_grid
+│       └── J_ApJ_826_56_table3.csv
+├── docs
+│   ├── ANSWER_DATA_FLOW_SHOES_WEIGHTED.md
+│   ├── EVIDENCE_PACKAGE_FOR_MANUSCRIPT.md
+│   ├── FRAMEWORK_CLAIM.md
+│   ├── mathuscript_hubble_tension.md
+│   └── OBSERVER_TENSOR_LEVELS.md
+├── README.md
+├── reference
+│   ├── anchor_h0_original.json
+│   ├── expanded_anchor_analysis.json
+│   ├── expected_phase_d.json
+│   └── expected_un_test.json
+├── requirements.txt
+├── results
+│   ├── phase_a
+│   ├── phase_b
+│   ├── phase_c
+│   ├── phase_d
+│   └── validation
+├── SAID
+│   ├── audit_logs
+│   │   ├── audit_phase_d_10142025.txt
+│   │   ├── COMPLETE_SESSION_LOG_2025-10-12.md
+│   │   ├── CORRECTION_SUMMARY.txt
+│   │   ├── repo_manifest_20251014_234712.txt
+│   │   ├── SAID_CORRECTION_LOG.md
+│   │   ├── SESSION_MEMORY.md
+│   │   └── STATUS_2025-10-13.md
+│   ├── provenance
+│   └── verification
+│       ├── source_code_checksums_20251014_234639.txt
+│       └── source_mast_checksums_20251014_234639.txt
+├── scripts
+├── src
+│   ├── __init__.py
+│   ├── nualgebra
+│   │   ├── 01_core_framework
+│   │   │   ├── complexity_bounds.json
+│   │   │   ├── nu_algebra_axioms.json
+│   │   │   └── nu_algebra_proofs.json
+│   │   ├── 04_validation
+│   │   │   └── statistical_summary.json
+│   │   ├── __init__.py
+│   │   └── nu_algebra.py
+│   ├── phase_a
+│   │   ├── calibrate_anchor_tensors.py
+│   │   └── __init__.py
+│   ├── phase_b
+│   │   ├── __init__.py
+│   │   ├── phase_b_create_figure.py
+│   │   └── phase_b_raw_sn_processing.py
+│   ├── phase_c
+│   │   ├── extract_empirical_covariance.py
+│   │   ├── __init__.py
+│   │   └── phase_c_integration.py
+│   ├── phase_d
+│   │   ├── achieve_100pct_resolution.py
+│   │   └── __init__.py
+│   ├── utils
+│   │   ├── generate_publication_figures.py
+│   │   └── __init__.py
+│   └── validation
+│       ├── bootstrap_validation.py
+│       ├── download_all_anchors.py
+│       ├── download_raw_cepheid_data.py
+│       ├── extract_literature_anchors.py
+│       ├── extract_real_cepheid_h0.py
+│       ├── __init__.py
+│       ├── monte_carlo_validation_fast.py
+│       ├── monte_carlo_validation.py
+│       ├── test_concordance_empirical.py
+│       └── test_epistemic_unit_hypothesis.py
+└── tests
+
+28 directories, 56 files

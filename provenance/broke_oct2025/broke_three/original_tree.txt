@@ -1,0 +1,433 @@
+.
+├── 02_hubble_analysis
+│   ├── CORRECTED_RESULTS_32BIT.json
+│   ├── group_merges.json
+│   ├── observer_tensors.csv
+│   ├── pairwise_tensions.csv
+│   └── probe_data.csv
+├── 03_uha_framework
+│   ├── anchor_catalog.csv
+│   └── hosts_subset.csv
+├── 05_systematic_budget
+│   └── operator_catalog.csv
+├── 06_publications
+├── 07_code
+│   └── hubble_analysis.py
+├── 08_metadata
+│   ├── author_credentials.json
+│   └── timeline.json
+├── ANSWER_DATA_FLOW_SHOES_WEIGHTED.md
+├── bootstrap_setup_exec.py
+├── bootstrap_validation.py
+├── CLARIFICATION.md
+├── code
+│   ├── achieve_100pct_resolution.py
+│   ├── bootstrap_validation.py
+│   ├── calibrate_anchor_tensors.py
+│   ├── extract_empirical_covariance.py
+│   ├── generate_publication_figures.py
+│   ├── mast_mcmc_download.py
+│   ├── monte_carlo_validation_fast.py
+│   ├── monte_carlo_validation.py
+│   ├── phase_b_create_figure.py
+│   ├── phase_b_raw_sn_processing.py
+│   ├── phase_c_integration.py
+│   ├── test_concordance_empirical.py
+│   └── verify_data_integrity.py
+├── COMPLETE_SESSION_LOG_2025-10-12.md
+├── CORRECTED_RESULTS_32BIT.json
+├── CORRECTION_SUMMARY.txt
+├── CRITICAL_FEEDBACK.md
+├── data
+│   ├── covariances
+│   ├── get_riess2022_data.py
+│   ├── mast
+│   │   ├── mcmc_metadata.json
+│   │   ├── mcmc_samples_L.npy
+│   │   ├── mcmc_samples_M.npy
+│   │   └── mcmc_samples_N.npy
+│   ├── mast_shoes_query.py
+│   ├── riess2022_data
+│   │   ├── aastex631.cls
+│   │   ├── apj.bst
+│   │   ├── apj_suppdata_page.html
+│   │   ├── arxiv_2112.04510_source.tar.gz
+│   │   ├── data_request_email_template.txt
+│   │   ├── data_search_summary.json
+│   │   ├── fig01.png
+│   │   ├── fig02.png
+│   │   ├── fig03.png
+│   │   ├── fig04.jpg
+│   │   ├── fig05.png
+│   │   ├── fig06.png
+│   │   ├── fig07.png
+│   │   ├── fig08.png
+│   │   ├── fig09.png
+│   │   ├── fig10.png
+│   │   ├── fig11.png
+│   │   ├── fig12.png
+│   │   ├── fig13.png
+│   │   ├── fig14.png
+│   │   ├── fig15.png
+│   │   ├── fig16.png
+│   │   ├── fig17.png
+│   │   ├── fig18.png
+│   │   ├── fig19.png
+│   │   ├── fig20.png
+│   │   ├── fig21.png
+│   │   ├── fig22.png
+│   │   ├── fig23.png
+│   │   ├── fig24.png
+│   │   ├── fig25.png
+│   │   ├── figa1.png
+│   │   ├── figa2.png
+│   │   ├── figb1.png
+│   │   ├── figb2.png
+│   │   ├── figc1.png
+│   │   ├── figd1.png
+│   │   ├── shoes6.bbl
+│   │   └── shoes6.tex
+│   ├── shoes_data
+│   │   ├── shoes_cepheid_hosts_summary.json
+│   │   ├── shoes_observations_full.csv
+│   │   └── shoes_programs_summary.json
+│   ├── SHOES_DATA_ACCESS.md
+│   ├── vizier_data
+│   │   ├── J_ApJ_826_56_table1.csv
+│   │   ├── J_ApJ_826_56_table2.csv
+│   │   ├── J_ApJ_826_56_table3.csv
+│   │   ├── J_ApJ_876_85_table1.csv
+│   │   ├── J_ApJ_876_85_table2.csv
+│   │   ├── J_ApJ_896_L43_table1.csv
+│   │   ├── J_ApJ_896_L43_table2.csv
+│   │   ├── J_ApJ_940_64_table1.csv
+│   │   ├── J_ApJ_940_64_table2.csv
+│   │   ├── J_ApJ_940_64_table3.csv
+│   │   └── vizier_catalog_summary.json
+│   ├── VIZIER_DATA_SUMMARY.md
+│   └── vizier_riess2022_query.py
+├── docs
+├── EVIDENCE_PACKAGE_FOR_MANUSCRIPT.md
+├── figures
+│   ├── anchor_comparison.pdf
+│   ├── concordance_intervals.pdf
+│   ├── covariance_heatmap.pdf
+│   ├── eigenspectrum.pdf
+│   ├── epistemic_components.pdf
+│   ├── monte_carlo_coverage.pdf
+│   ├── phase_b_h0_distribution.pdf
+│   └── phase_b_h0_distribution.png
+├── FRAMEWORK_CLAIM.md
+├── .git
+│   ├── branches
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   ├── objects
+│   │   ├── 01
+│   │   ├── 04
+│   │   ├── 05
+│   │   ├── 06
+│   │   ├── 07
+│   │   ├── 08
+│   │   ├── 09
+│   │   ├── 0a
+│   │   ├── 0b
+│   │   ├── 0c
+│   │   ├── 0d
+│   │   ├── 0e
+│   │   ├── 0f
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 13
+│   │   ├── 14
+│   │   ├── 15
+│   │   ├── 16
+│   │   ├── 18
+│   │   ├── 1b
+│   │   ├── 1d
+│   │   ├── 1e
+│   │   ├── 23
+│   │   ├── 25
+│   │   ├── 26
+│   │   ├── 29
+│   │   ├── 2a
+│   │   ├── 2b
+│   │   ├── 2c
+│   │   ├── 2e
+│   │   ├── 2f
+│   │   ├── 31
+│   │   ├── 32
+│   │   ├── 34
+│   │   ├── 36
+│   │   ├── 37
+│   │   ├── 38
+│   │   ├── 39
+│   │   ├── 3a
+│   │   ├── 3d
+│   │   ├── 3e
+│   │   ├── 40
+│   │   ├── 43
+│   │   ├── 44
+│   │   ├── 45
+│   │   ├── 46
+│   │   ├── 47
+│   │   ├── 48
+│   │   ├── 49
+│   │   ├── 4b
+│   │   ├── 4c
+│   │   ├── 4d
+│   │   ├── 4f
+│   │   ├── 50
+│   │   ├── 52
+│   │   ├── 55
+│   │   ├── 59
+│   │   ├── 5a
+│   │   ├── 5c
+│   │   ├── 5d
+│   │   ├── 5f
+│   │   ├── 60
+│   │   ├── 62
+│   │   ├── 64
+│   │   ├── 65
+│   │   ├── 66
+│   │   ├── 68
+│   │   ├── 69
+│   │   ├── 6b
+│   │   ├── 6c
+│   │   ├── 6e
+│   │   ├── 6f
+│   │   ├── 71
+│   │   ├── 72
+│   │   ├── 73
+│   │   ├── 76
+│   │   ├── 77
+│   │   ├── 78
+│   │   ├── 7b
+│   │   ├── 7c
+│   │   ├── 7e
+│   │   ├── 80
+│   │   ├── 82
+│   │   ├── 83
+│   │   ├── 84
+│   │   ├── 89
+│   │   ├── 8e
+│   │   ├── 8f
+│   │   ├── 90
+│   │   ├── 91
+│   │   ├── 92
+│   │   ├── 93
+│   │   ├── 95
+│   │   ├── 96
+│   │   ├── 97
+│   │   ├── 9a
+│   │   ├── 9b
+│   │   ├── 9c
+│   │   ├── 9d
+│   │   ├── 9e
+│   │   ├── a1
+│   │   ├── a3
+│   │   ├── a7
+│   │   ├── a8
+│   │   ├── ab
+│   │   ├── ad
+│   │   ├── af
+│   │   ├── b0
+│   │   ├── b1
+│   │   ├── b3
+│   │   ├── b4
+│   │   ├── b5
+│   │   ├── b7
+│   │   ├── b9
+│   │   ├── ba
+│   │   ├── bb
+│   │   ├── bd
+│   │   ├── be
+│   │   ├── bf
+│   │   ├── c5
+│   │   ├── c6
+│   │   ├── ca
+│   │   ├── cb
+│   │   ├── cc
+│   │   ├── cd
+│   │   ├── d0
+│   │   ├── d1
+│   │   ├── d4
+│   │   ├── d6
+│   │   ├── d7
+│   │   ├── da
+│   │   ├── dc
+│   │   ├── dd
+│   │   ├── de
+│   │   ├── e1
+│   │   ├── e2
+│   │   ├── e3
+│   │   ├── e4
+│   │   ├── e5
+│   │   ├── e6
+│   │   ├── e7
+│   │   ├── e8
+│   │   ├── e9
+│   │   ├── ea
+│   │   ├── eb
+│   │   ├── ed
+│   │   ├── ee
+│   │   ├── ef
+│   │   ├── f0
+│   │   ├── f1
+│   │   ├── f2
+│   │   ├── f5
+│   │   ├── f8
+│   │   ├── f9
+│   │   ├── fa
+│   │   ├── fb
+│   │   ├── fe
+│   │   ├── info
+│   │   └── pack
+│   ├── ORIG_HEAD
+│   └── refs
+│       ├── heads
+│       ├── remotes
+│       └── tags
+├── .gitignore
+├── manifest.txt
+├── manuscript
+│   ├── manuscript
+│   ├── manuscript_CORRECTED.txt
+│   ├── manuscript.txt
+│   └── SECTION_3.4_OBSERVER_TENSOR_REFERENCE_FRAME.md
+├── manuscript_hubble_tension_resolution.tex
+├── mathuscript_hubble_tension.md
+├── montecarlo
+│   ├── checksums
+│   ├── code
+│   │   ├── extract_tensors.py
+│   │   ├── generate_chains.py
+│   │   ├── requirements.txt
+│   │   └── validate_concordance.py
+│   ├── create_zenodo_package.sh
+│   ├── docs
+│   │   ├── hubble_mc_calibrated.tex
+│   │   └── supplementary_methodology.md
+│   ├── generate_all_data.py
+│   ├── hubble_montecarlo_package2_20251011
+│   │   ├── checksums
+│   │   ├── CITATION.cff
+│   │   ├── code
+│   │   ├── docs
+│   │   ├── generate_all_data.py
+│   │   ├── LICENSE.txt
+│   │   ├── MANIFEST.txt
+│   │   ├── mcmc_chains
+│   │   ├── README.md
+│   │   ├── tensor_evolution
+│   │   └── validation_results
+│   ├── hubble_montecarlo_package2_20251011.tar.gz
+│   ├── hubble_montecarlo_package2_20251011.tar.gz.sha256
+│   ├── martin.txt
+│   ├── mcmc_chains
+│   │   ├── chain_statistics.csv
+│   │   ├── des_mock_chain.csv
+│   │   ├── planck_mock_chain.csv
+│   │   └── shoes_mock_chain.csv
+│   ├── PACKAGE_COMPLETE.md
+│   ├── README.md
+│   ├── tensor_evolution
+│   │   ├── convergence_trace.csv
+│   │   ├── tensor_evolution_iter0.json
+│   │   ├── tensor_evolution_iter1.json
+│   │   ├── tensor_evolution_iter2.json
+│   │   ├── tensor_evolution_iter3.json
+│   │   ├── tensor_evolution_iter4.json
+│   │   └── tensor_evolution_iter5.json
+│   ├── validation_results
+│   │   ├── bootstrap_validation.json
+│   │   ├── final_merged_interval.json
+│   │   ├── improvement_metrics.json
+│   │   ├── package1_vs_package2.csv
+│   │   └── sensitivity_analysis.json
+│   └── VERIFICATION.md
+├── nualgebra
+│   ├── 01_core_framework
+│   │   ├── complexity_bounds.json
+│   │   ├── nu_algebra_axioms.json
+│   │   └── nu_algebra_proofs.json
+│   ├── 04_validation
+│   │   └── statistical_summary.json
+│   └── nu_algebra.py
+├── OBSERVER_TENSOR_LEVELS.md
+├── README.md
+├── README_SESSION_RECOVERY.md
+├── READY_FOR_PUBLICATION.md
+├── requirements.txt
+├── results
+│   ├── 100PCT_RESOLUTION_SUMMARY.txt
+│   ├── anchor_summary_stats.json
+│   ├── anchor_tensors.json
+│   ├── comparison_phase_a_vs_c.json
+│   ├── concordance_empirical.json
+│   ├── covariance_eigenspectrum.json
+│   ├── covariance_validation.json
+│   ├── cross_anchor_distances.json
+│   ├── data_inventory.json
+│   ├── empirical_correlation_210x210.npy
+│   ├── empirical_covariance_210x210.npy
+│   ├── monte_carlo_coverage.json
+│   ├── phase_b_h0_from_raw_data.json
+│   ├── phase_b_per_object_contributions.csv
+│   ├── phase_b_raw_sn_processing.json
+│   ├── phase_c_validation_summary.txt
+│   ├── pipeline_verification_report.json
+│   ├── resolution_100pct_mcmc.json
+│   └── systematic_decomposition.json
+├── RESULTS_SUMMARY.md
+├── run_100pct_resolution.sh
+├── run_option_c_corrected.sh
+├── run_option_c_fixed.sh
+├── run_option_c.sh
+├── run_phase_b.sh
+├── SAID_CORRECTION_LOG.md
+├── SESSION_MEMORY.md
+├── START_HERE.md
+├── STATUS_2025-10-13.md
+├── tests
+│   ├── critical_diagnosis.py
+│   ├── dissect_merge_calculation.py
+│   ├── falsification_tests.py
+│   ├── test_correct_formula.py
+│   └── trace_actual_calculation.py
+├── validation
+│   └── phase_b_vs_published_sh0es.txt
+└── validation_results
+    ├── bootstrap_samples.csv
+    ├── .gitkeep
+    ├── phaseC_empirical_validation.json
+    ├── phaseC_expected_output_template.json
+    ├── phaseC_summary_report.txt
+    ├── reproducibility.yaml
+    └── validation_summary.json
+
+209 directories, 222 files

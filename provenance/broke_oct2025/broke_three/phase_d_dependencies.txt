@@ -1,0 +1,3 @@
+with open(DATA_DIR / "mcmc_metadata.json") as f:
+with open(RESULTS_DIR / "anchor_tensors.json") as f:
+with open(RESULTS_DIR / "cross_anchor_distances.json") as f:

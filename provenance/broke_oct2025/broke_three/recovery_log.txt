@@ -1,0 +1,147 @@
+======================================================================
+HB RECOVERY - Finding the Contamination
+Started: Wed Oct 15 12:28:58 PM PDT 2025
+======================================================================
+
+[0;34mSTEP 1: Structural Comparison[0m
+Generating directory trees...
+  ✓ Original repo tree: /run/media/root/OP01/hb_recovery_20251015_122858/original_tree.txt
+  ✓ Clean repo tree: /run/media/root/OP01/hb_recovery_20251015_122858/clean_tree.txt
+  ✓ Structural diff: /run/media/root/OP01/hb_recovery_20251015_122858/structural_diff.txt
+
+[0;34mSTEP 2: Code Comparison - Finding Layer 6/Entropy Contamination[0m
+Searching for 'Layer 6' or 'entropy' in clean repo...
+  [0;32m✓ No obvious Layer 6/entropy keywords found[0m
+
+[0;34mSTEP 3: Phase D Specific Comparison[0m
+Comparing Phase D implementation...
+  [0;31m✗ DIFFERENCES FOUND in Phase D![0m
+  See: /run/media/root/OP01/hb_recovery_20251015_122858/phase_d_diff.txt
+
+  First 50 lines of diff:
+19,22c19,29
+< # Set directories
+< BASE_DIR = Path("/run/media/root/OP01/got/hubble")
+< DATA_DIR = BASE_DIR / "data" / "mast"
+< RESULTS_DIR = BASE_DIR / "results"
+---
+> # Import centralized configuration
+> from src.config import (MAST_DIR,
+>                         MCMC_METADATA_FILE,
+>                         RESULTS_PHASE_D,
+>                         PHASE_A_TENSORS,
+>                         PHASE_A_DISTANCES,
+>                         PHASE_D_RESOLUTION)
+> 
+> # Use centralized directories
+> DATA_DIR = MAST_DIR
+> RESULTS_DIR = RESULTS_PHASE_D
+30c37
+< with open(DATA_DIR / "mcmc_metadata.json") as f:
+---
+> with open(MCMC_METADATA_FILE) as f:
+53c60
+< with open(RESULTS_DIR / "anchor_tensors.json") as f:
+---
+> with open(PHASE_A_TENSORS) as f:
+56c63
+< with open(RESULTS_DIR / "cross_anchor_distances.json") as f:
+---
+> with open(PHASE_A_DISTANCES) as f:
+377,378c384
+< results_path = RESULTS_DIR / "resolution_100pct_mcmc.json"
+< with open(results_path, 'w') as f:
+---
+> with open(PHASE_D_RESOLUTION, 'w') as f:
+381c387
+< print(f"\n   ✅ Results saved: {results_path}")
+---
+> print(f"\n   ✅ Results saved: {PHASE_D_RESOLUTION}")
+
+[0;34mSTEP 4: Results Comparison[0m
+Comparing result files...
+  Original results:
+    "reduction_percent": 97.35254364808654,
+  Clean repo results:
+    "reduction_percent": 97.35254364808654,
+  [0;32m✓ Results are identical[0m
+
+[0;34mSTEP 5: Searching for Full Convergence (100%) File[0m
+Searching for files with full_concordance: true...
+Searching for 100% resolution claims...
+  [1;33m⚠ No files found with full_concordance: true[0m
+  [0;32m✓ Found 100% claims in:[0m
+hubble/mathuscript_hubble_tension.md:This package demonstrates full resolution of the Hubble tension through empirical calibration of observer domain tensors from MCMC posterior samples. Building on Package 1 (91% resolution using physical reasoning), we achieve 100% concordance through iterative refinement of tensor assignments based on systematic bias signatures extracted from Planck, DES, and SH0ES chains.
+hubble/mathuscript_hubble_tension.md:Package 2 (MC calibration): 100% resolution  
+hubble/CLARIFICATION.md:**Intellectual honesty**: This framework represents genuine mathematical innovation with validated partial resolution. The remaining 9% gap is a data availability issue, not a framework limitation. Claiming 100% resolution would be premature without access to detailed MCMC posteriors.
+hubble/montecarlo/PACKAGE_COMPLETE.md:- ✓ 100% Hubble tension resolution achieved
+hubble/montecarlo/PACKAGE_COMPLETE.md:✓ Achieves 100% concordance on synthetic posteriors
+hubble/montecarlo/PACKAGE_COMPLETE.md:4. **Empirical:** 100% Hubble tension resolution on synthetic data
+hubble/montecarlo/VERIFICATION.md:- 100% concordance success rate
+hubble/data/SHOES_DATA_ACCESS.md:**What we need for 100% resolution**:
+hubble/results/resolution_100pct_mcmc.json:  "objective": "100% Hubble tension resolution using full MCMC posterior",
+
+[0;34mSTEP 6: Data File Comparison[0m
+Checking MCMC samples...
+  Original MCMC files listed in: /run/media/root/OP01/hb_recovery_20251015_122858/original_mcmc_files.txt
+  Clean repo MCMC files listed in: /run/media/root/OP01/hb_recovery_20251015_122858/clean_mcmc_files.txt
+
+[0;34mSTEP 7: Hunt for Orphaned/Missing Files[0m
+Searching for Phase D dependencies...
+Files referenced by Phase D:
+with open(DATA_DIR / "mcmc_metadata.json") as f:
+with open(RESULTS_DIR / "anchor_tensors.json") as f:
+with open(RESULTS_DIR / "cross_anchor_distances.json") as f:
+
+Recently modified JSON files in original repo:
+ 49552196      8 -rw-r--r--   1 root     root         4688 Oct 11 06:03 ./02_hubble_analysis/CORRECTED_RESULTS_32BIT.json
+ 49552197      4 -rw-r--r--   1 root     root          600 Oct 11 06:03 ./02_hubble_analysis/group_merges.json
+ 49552205      4 -rw-r--r--   1 root     root         2700 Oct 11 06:03 ./nualgebra/04_validation/statistical_summary.json
+ 49552192      4 -rw-r--r--   1 root     root         1257 Oct 11 06:03 ./nualgebra/01_core_framework/nu_algebra_axioms.json
+ 49552194      4 -rw-r--r--   1 root     root         2212 Oct 11 06:03 ./nualgebra/01_core_framework/complexity_bounds.json
+ 49552193      4 -rw-r--r--   1 root     root         2499 Oct 11 06:03 ./nualgebra/01_core_framework/nu_algebra_proofs.json
+ 49552481      4 -rw-r--r--   1 root     root         3290 Oct 11 12:07 ./CORRECTED_RESULTS_32BIT.json
+ 49552285      4 -rw-r--r--   1 root     root          953 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter5.json
+ 49552284      4 -rw-r--r--   1 root     root          954 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter0.json
+ 49552282      4 -rw-r--r--   1 root     root          956 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter3.json
+ 49552280      4 -rw-r--r--   1 root     root          970 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter1.json
+ 49552283      4 -rw-r--r--   1 root     root          971 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter4.json
+ 49552281      4 -rw-r--r--   1 root     root          955 Oct 11 07:11 ./montecarlo/tensor_evolution/tensor_evolution_iter2.json
+ 49552302      4 -rw-r--r--   1 root     root          953 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter5.json
+ 49552297      4 -rw-r--r--   1 root     root          954 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter0.json
+ 49552300      4 -rw-r--r--   1 root     root          956 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter3.json
+ 49552298      4 -rw-r--r--   1 root     root          970 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter1.json
+ 49552301      4 -rw-r--r--   1 root     root          971 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter4.json
+ 49552299      4 -rw-r--r--   1 root     root          955 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/tensor_evolution/tensor_evolution_iter2.json
+ 49552306      4 -rw-r--r--   1 root     root          546 Oct 11 07:12 ./montecarlo/hubble_montecarlo_package2_20251011/validation_results/improvement_metrics.json
+
+[0;34mSTEP 8: Checking CORRECTED_RESULTS_32BIT.json Versions[0m
+  Version 1 (root):
+    "full_concordance": false,
+    "gap_remaining": 0.4783,
+    "resolution_status": "achievable_with_minimal_allocation"
+  Version 2 (02_hubble_analysis):
+    "full_concordance": false,
+    "gap_remaining": 0.4783,
+    "resolution_status": "achievable_with_minimal_allocation"
+    "resolution_claim": "91% tension reduction achieved; full resolution requires 0.24 km/s/Mpc systematic allocation",
+    "data_requirements_for_full_resolution": [
+    "phd_contribution": "Novel framework validated on real cosmological problem with clear path to full resolution"
+  [0;31m✗ Two different versions exist![0m
+  See: /run/media/root/OP01/hb_recovery_20251015_122858/corrected_results_versions_diff.txt
+
+======================================================================
+RECOVERY ANALYSIS COMPLETE
+======================================================================
+Completed: Wed Oct 15 12:28:58 PM PDT 2025
+
+All output files saved to: /run/media/root/OP01/hb_recovery_20251015_122858
+
+Key files to review:
+  1. /run/media/root/OP01/hb_recovery_20251015_122858/phase_d_diff.txt - Phase D code differences
+  2. /run/media/root/OP01/hb_recovery_20251015_122858/contamination_keywords.txt - Layer 6/entropy references
+  3. /run/media/root/OP01/hb_recovery_20251015_122858/results_diff.txt - Results comparison
+  4. /run/media/root/OP01/hb_recovery_20251015_122858/full_concordance_files.txt - Files claiming 100%
+  5. /run/media/root/OP01/hb_recovery_20251015_122858/structural_diff.txt - Directory structure differences
+
+[0;31mCRITICAL: Phase D code differs between repos[0m

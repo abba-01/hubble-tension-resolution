@@ -1,0 +1,151 @@
+{
+  "methodology": {
+    "coordinate_precision": "32-bit",
+    "weighting_method": "inverse_variance",
+    "tensor_refinement": "precision-adjusted_zero_a",
+    "status": "validated_2025-10-11"
+  },
+  "observer_tensors_refined": {
+    "Planck18": {
+      "T_obs": [
+        0.95,
+        0.999083,
+        0.0,
+        -0.507405
+      ],
+      "relative_precision": 0.007418,
+      "notes": "Enhanced temporal precision, awareness adjusted for CMB precision"
+    },
+    "DES-IDL": {
+      "T_obs": [
+        0.9,
+        0.333333,
+        0.015873,
+        -0.309644
+      ],
+      "relative_precision": 0.009674,
+      "notes": "BAO methodology with intermediate temporal anchor"
+    },
+    "SH0ES": {
+      "T_obs": [
+        0.8,
+        0.009901,
+        -0.047619,
+        0.514143
+      ],
+      "relative_precision": 0.014239,
+      "notes": "Precision-adjusted awareness for high-quality Cepheid ladder"
+    },
+    "TRGB": {
+      "T_obs": [
+        0.75,
+        0.009901,
+        -0.047619,
+        0.53436
+      ],
+      "relative_precision": 0.035817,
+      "notes": "Lower confidence, higher awareness adjustment"
+    },
+    "TDCOSMO": {
+      "T_obs": [
+        0.7,
+        0.230769,
+        -0.047619,
+        -0.073238
+      ],
+      "relative_precision": 0.093385,
+      "notes": "Model-dependent lensing, large uncertainty shifts awareness"
+    },
+    "Megamaser": {
+      "T_obs": [
+        0.85,
+        0.009901,
+        -0.047619,
+        0.438691
+      ],
+      "relative_precision": 0.040816,
+      "notes": "Direct geometric, moderate awareness"
+    }
+  },
+  "aggregated_measurements": {
+    "early_universe": {
+      "H0_n": 67.3219,
+      "H0_u": 0.3963,
+      "interval": [
+        66.9256,
+        67.7182
+      ],
+      "T_obs": [
+        0.925676,
+        0.675205,
+        0.007722,
+        -0.411197
+      ],
+      "probes": [
+        "Planck18",
+        "DES-IDL"
+      ],
+      "weighting": {
+        "Planck18": 0.6283,
+        "DES-IDL": 0.3717
+      }
+    },
+    "late_universe": {
+      "H0_n": 72.7198,
+      "H0_u": 0.9072,
+      "interval": [
+        71.8126,
+        73.627
+      ],
+      "T_obs": [
+        0.779032,
+        0.059774,
+        -0.047619,
+        0.365711
+      ],
+      "probes": [
+        "SH0ES",
+        "TRGB",
+        "TDCOSMO",
+        "Megamaser"
+      ],
+      "weighting": {
+        "SH0ES": 0.761,
+        "TRGB": 0.1317,
+        "TDCOSMO": 0.0159,
+        "Megamaser": 0.0915
+      }
+    }
+  },
+  "epistemic_distance": {
+    "delta_T": 1.00344828,
+    "delta_T_squared": 1.00690826,
+    "component_differences": {
+      "delta_P_m": 0.146644,
+      "delta_0_t": 0.615431,
+      "delta_0_m": 0.055341,
+      "delta_0_a": -0.776908
+    }
+  },
+  "tensor_extended_merge": {
+    "disagreement": 5.3979,
+    "standard_uncertainty": 0.65175,
+    "tensor_expansion": 2.70825673,
+    "total_uncertainty": 3.36000673,
+    "merged_H0_n": 69.7887,
+    "merged_H0_u": 3.36,
+    "merged_interval": [
+      66.4287,
+      73.1487
+    ],
+    "expansion_ratio": 5.155361
+  },
+  "concordance_assessment": {
+    "early_contained": true,
+    "late_contained": false,
+    "full_concordance": false,
+    "gap_remaining": 0.4783,
+    "additional_systematic_needed": 0.2392,
+    "resolution_status": "achievable_with_minimal_allocation"
+  }
+}

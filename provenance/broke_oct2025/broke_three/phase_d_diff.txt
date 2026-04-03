@@ -1,0 +1,38 @@
+19,22c19,29
+< # Set directories
+< BASE_DIR = Path("/run/media/root/OP01/got/hubble")
+< DATA_DIR = BASE_DIR / "data" / "mast"
+< RESULTS_DIR = BASE_DIR / "results"
+---
+> # Import centralized configuration
+> from src.config import (MAST_DIR,
+>                         MCMC_METADATA_FILE,
+>                         RESULTS_PHASE_D,
+>                         PHASE_A_TENSORS,
+>                         PHASE_A_DISTANCES,
+>                         PHASE_D_RESOLUTION)
+> 
+> # Use centralized directories
+> DATA_DIR = MAST_DIR
+> RESULTS_DIR = RESULTS_PHASE_D
+30c37
+< with open(DATA_DIR / "mcmc_metadata.json") as f:
+---
+> with open(MCMC_METADATA_FILE) as f:
+53c60
+< with open(RESULTS_DIR / "anchor_tensors.json") as f:
+---
+> with open(PHASE_A_TENSORS) as f:
+56c63
+< with open(RESULTS_DIR / "cross_anchor_distances.json") as f:
+---
+> with open(PHASE_A_DISTANCES) as f:
+377,378c384
+< results_path = RESULTS_DIR / "resolution_100pct_mcmc.json"
+< with open(results_path, 'w') as f:
+---
+> with open(PHASE_D_RESOLUTION, 'w') as f:
+381c387
+< print(f"\n   ✅ Results saved: {results_path}")
+---
+> print(f"\n   ✅ Results saved: {PHASE_D_RESOLUTION}")
