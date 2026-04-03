@@ -1,0 +1,297 @@
+================================================================================
+GREEK ALPHABET — COSMOLOGY REFERENCE
+Eric D. Martin | Mapped to your work specifically
+2026-03-28
+================================================================================
+
+Format per entry:
+  Uppercase / lowercase  |  Name (pronunciation)
+  Cosmology meaning — what it represents in the field
+  In your work — how it appears in Paper 1 / Paper 2 / UHA
+
+Note: same letter can mean different things in different fields.
+      This list gives the COSMOLOGY / PHYSICS meanings, not military, statistics,
+      biology, or engineering uses (which often differ completely).
+
+────────────────────────────────────────────────────────────────────────────────
+
+Α  α  |  ALPHA  (AL-fuh)
+  General: Fine structure constant (α ≈ 1/137), spectral indices, tensor-to-
+  scalar ratio. Also: angular scale of perturbations.
+  Cosmology colloquial: "How strong is electromagnetism?" (fine structure use)
+  In your work: Not a primary symbol in Paper 1/2. Appears implicitly in
+  sound horizon physics (α_s = spectral tilt variants). In N/U Algebra, α is
+  used as a scaling exponent in uncertainty bounds.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Β  β  |  BETA  (BAY-tuh)
+  General: β = v/c (velocity as fraction of light speed). Also: spectral slope.
+  Cosmology colloquial: "How fast is this thing moving, as a fraction of c?"
+  In your work: Not primary. Appears in radiation transfer contexts and
+  occasionally in parametric fits for galaxy bias.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Γ  γ  |  GAMMA  (GAM-uh)
+  General: Γ = Lorentz factor (time dilation). γ-rays = high-energy photons.
+  Also: decay rate / reaction rate in early-universe physics.
+  Cosmology colloquial: "How much does time slow down at near-light speeds?"
+  In your work: Not primary. Relevant in your nu-anthropology and radiation
+  era calculations (photon interaction rates during recombination).
+
+────────────────────────────────────────────────────────────────────────────────
+
+Δ  δ  |  DELTA  (DEL-tuh)
+  Uppercase Δ: Change, difference between two values.
+  Lowercase δ: Density contrast — δ = (ρ - ρ̄) / ρ̄, how overdense a region
+  is relative to the cosmic mean. Also: Dirac delta function.
+  Cosmology colloquial: Δ = "how much did it move?" δ = "how lumpy is this spot?"
+  In your work: Δ is everywhere. "Δχ² = 7.06" (improvement in chi-squared fit).
+  "Δχ² = 0.12" (no improvement from w₀wₐ). δ appears in structure formation
+  context when discussing σ₈ and matter clustering.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ε  ε  |  EPSILON  (EP-suh-lon)
+  Cosmology: ε = small parameter; slow-roll parameter in inflation (ε = 0
+  means perfect de Sitter inflation). Also: a tiny perturbative quantity.
+  NOT the military epsilon (which means "enemy forces").
+  Cosmology colloquial: "How small is this correction?" If ε ≈ 0, inflation
+  is working. If ε ~ 1, inflation is ending.
+  In your work: Not a primary symbol. Appears implicitly as "the residual
+  after ξ-normalization is of order ε" — i.e., the physical signal is
+  a small correction on top of the removed artifact.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ζ  ζ  |  ZETA  (ZAY-tuh)
+  General: Baryon-to-photon ratio (sometimes written ζ). Also: primordial
+  curvature perturbation ζ (the one that becomes CMB anisotropies).
+  Cosmology colloquial: "The initial seeds of structure."
+  In your work: Not primary. The letter z (lowercase Roman) is used for
+  redshift — do not confuse with ζ (zeta), which is the Greek letter.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Η  η  |  ETA  (AY-tuh)
+  General: η = conformal time (cosmic clock that runs faster in the early
+  universe and slows as the universe expands). Also: baryon-to-photon ratio
+  in some notations.
+  Cosmology colloquial: "The universe's internal clock, running on expansion."
+  In your work: Not primary. Relevant in the sound horizon integral — the
+  comoving sound horizon r_s is defined by integrating the sound speed
+  over conformal time from the Big Bang to recombination.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Θ  θ  |  THETA  (THAY-tuh)
+  General: Angular position on the sky. θ_* = angular scale of CMB sound
+  horizon (Planck's most precisely measured quantity: θ_* ≈ 0.596°).
+  Also: angle of incidence, polarization angle.
+  Cosmology colloquial: "Where is this thing on the sky?"
+  In your work: Not primary in Paper 1/2 explicitly, but θ_* is the CMB
+  observable that anchors the Planck H₀ value. Relevant background context.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ι  ι  |  IOTA  (eye-OH-tuh)
+  General: Rarely used in physics. Occasionally appears as a small index.
+  Cosmology colloquial: Almost never used. If you see it, it's probably
+  a tensor index, not a cosmological quantity.
+  In your work: Not used.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Κ  κ  |  KAPPA  (KAP-uh)
+  General: κ = spatial curvature parameter. In GR: κ = 8πG/c⁴ (coupling
+  between mass and spacetime geometry). Also: convergence in weak lensing.
+  Cosmology colloquial: "How curved is space?" κ = 0 means flat (our universe).
+  κ > 0 means space closes like a sphere. κ < 0 means it opens like a saddle.
+  In your work: Relevant context — we assume flat ΛCDM (κ = 0 = Ω_k = 0).
+  Weak lensing convergence κ maps directly to the Ω_m deficit discussed
+  in Section 4.2 (S₈ tension as tie-breaker).
+
+────────────────────────────────────────────────────────────────────────────────
+
+Λ  λ  |  LAMBDA  (LAM-duh)
+  Uppercase Λ: The cosmological constant — Einstein's "biggest blunder" that
+  turned out to be real. Represents dark energy as a fixed energy density of
+  the vacuum. Units: 1/length².
+  Lowercase λ: Wavelength of light (or other waves).
+  Cosmology colloquial: Λ = "the push." The constant outward pressure of empty
+  space that makes the universe accelerate its expansion.
+  In your work: "The Λ in ΛCDM stands for the cosmological constant. Our
+  analysis does not require modifying Λ — the tensions are resolved by
+  removing the coordinate artifact and confirming an Ω_m deficit."
+
+────────────────────────────────────────────────────────────────────────────────
+
+Μ  μ  |  MU  (MYOO)
+  General: μ = distance modulus (log scale for astronomical distances).
+  Also: mean of a distribution, chemical potential, absorption coefficient.
+  Cosmology colloquial: μ = "How far away is that supernova, in logarithm units?"
+  In your work: μ is one of the four UHA components — the cosmic scale factor
+  (how expanded the universe is at a given time). UHA = (σ, μ, CosmoID, CRC)
+  where μ encodes the epoch.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ν  ν  |  NU  (NOO)
+  General: ν = frequency of light (ν = c/λ). Also: neutrinos (ν_e, ν_μ, ν_τ).
+  Subscript ν in χ²_ν = "chi-squared per degree of freedom" (reduced chi-squared).
+  Cosmology colloquial: ν by itself = "how fast is this light wiggling?"
+  χ²_ν = "what's my score per data point?"
+  In your work: χ²_ν appears in Table 1. "χ²_ν = 1.09 for the Ω_m-free
+  model — a good fit. χ²_ν = 2.26 for Planck ΛCDM — rejected."
+  Also: your nu-algebra and nu-anthropology repos use ν as shorthand for
+  "N/U" (Nominal/Uncertainty).
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ξ  ξ  |  XI  (KSEE or ZY)
+  THE central symbol of your entire theoretical framework.
+  General in cosmology: Rarely used — occasionally a two-point correlation
+  function (ξ(r) = galaxy correlation function).
+  Your definition: ξ(z) = d_c(z) / d_H — the Horizon-Normalized Coordinate.
+  The ratio of comoving distance to Hubble horizon distance. H₀-independent
+  by construction because both d_c and d_H scale as 1/H₀.
+  Cosmology colloquial (yours): "The universe's address, in universe-units."
+  ξ = 0 is here and now. ξ = 1 is the edge of the observable universe.
+  In your work: "By applying ξ-normalization, the H₀ factor cancels exactly
+  for redshift-derived distances. This removes ~90% of the apparent Hubble
+  tension as a coordinate artifact. ξ(z) = ∫₀ᶻ dz'/E(z')."
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ο  ο  |  OMICRON  (OM-ih-kron)
+  General: Almost never used in physics — looks too much like the number zero.
+  In your work: Not used.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Π  π  |  PI  (PIE)
+  General: π = 3.14159… — ratio of circumference to diameter. Appears in
+  almost every physical formula involving spheres, circles, oscillations.
+  Cosmology colloquial: "The circle number." You can't avoid it.
+  In your work: Appears in the fine structure constant, spherical harmonic
+  transforms of CMB power spectra, and GR field equations.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ρ  ρ  |  RHO  (ROH)
+  General: ρ = density (mass per volume). ρ_c = critical density of the
+  universe — the density that makes the universe exactly flat.
+  Ω_m = ρ_m / ρ_c (matter density as a fraction of critical density).
+  Cosmology colloquial: "How packed is the universe with stuff?"
+  In your work: ρ underlies Ω_m. "Ω_m = ρ_m / ρ_c = 0.268 in our best fit,
+  versus Planck's 0.315. That deficit in ρ_m is the physical signal we find."
+
+────────────────────────────────────────────────────────────────────────────────
+
+Σ  σ  |  SIGMA  (SIG-muh)
+  Uppercase Σ: Summation symbol (sum over a series).
+  Lowercase σ: Standard deviation — the primary unit of statistical significance.
+  Also: σ₈ = amplitude of matter density fluctuations on 8 h⁻¹ Mpc scales.
+  Also: σ (Morton encoding) = the spatial position component in UHA.
+  Cosmology colloquial: σ = "how many standard deviations from normal?"
+  5σ = discovery standard. 3σ = interesting. 1σ = unremarkable.
+  In your work: "The reported 5σ Hubble tension is 90% a coordinate artifact.
+  The residual is ~1σ physical Ω_m deficit. σ₈ tension: 2–3σ below Planck."
+  In UHA: σ = Morton(r/R_H(μ)) ∈ [0,1] — the spatial address component.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Τ  τ  |  TAU  (RHYMES WITH "COW")
+  General: τ = optical depth to reionization. How much CMB photons were
+  scattered after the first stars turned on. Also: time coordinate in
+  conformal / proper time contexts.
+  Cosmology colloquial: "How foggy was the early universe after it cleared?"
+  Higher τ = CMB photons bounced around longer after recombination.
+  In your work: Not a primary symbol in Paper 1/2. Background context for
+  CMB polarization (the Planck τ constraint affects H₀ derivation).
+
+────────────────────────────────────────────────────────────────────────────────
+
+Υ  υ  |  UPSILON  (UP-sih-lon)
+  General: Rarely used in cosmology. Occasionally: mass-to-light ratio Υ.
+  In your work: Not used.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Φ  φ  |  PHI  (FY)
+  General: φ = gravitational potential (the Newtonian potential). Also:
+  the primordial inflaton field (scalar field driving inflation). Also:
+  azimuthal angle in spherical coordinates.
+  Cosmology colloquial: φ = "how deep is this gravity well?"
+  In your work: Not primary in Paper 1/2. Relevant in UHA context: the
+  gravitational potential φ appears in redshift calculations and in the
+  full GR treatment of d_c.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Χ  χ  |  CHI  (KY — rhymes with "sky")
+  General: χ² = chi-squared statistic. Also: χ = comoving radial distance
+  in some notations. Also: χ (no subscript) = baryon-to-photon ratio in
+  some older literature.
+  Cosmology colloquial: χ² = "the scorecard." How well does your model fit?
+  Lower χ² wins.
+  In your work: χ² is the primary fit statistic throughout Paper 2.
+  "Planck ΛCDM: χ² = 13.57. Ω_m free: χ² = 6.51. Δχ² = 7.06.
+  w₀wₐ addition: Δχ² = 0.12 — statistically negligible."
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ψ  ψ  |  PSI  (SIGH or PSEE)
+  General: ψ = second gravitational potential in scalar-tensor / modified
+  gravity theories. Also: wavefunction in quantum mechanics.
+  Cosmology colloquial: "The other gravity potential." In GR there are two
+  gauge-invariant potentials (Φ and Ψ); they're equal in standard ΛCDM
+  but differ in modified gravity.
+  In your work: Not primary. Relevant if modified gravity is invoked as an
+  alternative to the Ω_m deficit explanation.
+
+────────────────────────────────────────────────────────────────────────────────
+
+Ω  ω  |  OMEGA  (oh-MAY-guh)
+  Uppercase Ω: DENSITY PARAMETER — the most important Ω family in your work:
+    Ω_m  = matter (dark + baryonic), target value in Paper 2
+    Ω_Λ  = dark energy / cosmological constant
+    Ω_b  = baryonic matter only
+    Ω_r  = radiation (photons + neutrinos)
+    Ω_k  = curvature (0 = flat universe)
+    Ω_total = Ω_m + Ω_Λ + Ω_r + Ω_k = 1 (flat universe constraint)
+  Lowercase ω: angular frequency; sometimes used for dark energy equation
+  of state in alternative notation.
+  Cosmology colloquial: Ω = "what fraction of the universe is this thing?"
+  Everything has to add up to 1 in a flat universe.
+  In your work: Ω_m is the central quantity of Paper 2. "We find Ω_m = 0.268
+  (our fit) vs. 0.295 (DESI DR1) vs. 0.315 (Planck ΛCDM). The deficit
+  is the physical signal that remains after ξ removes the H₀ artifact."
+  In UHA: CosmoID = SHA-256(H₀, Ω_m, Ω_r, Ω_k, Ω_Λ) — all five Ω
+  parameters are encoded into the universal coordinate system.
+
+================================================================================
+QUICK REFERENCE — SYMBOLS USED IN YOUR PAPERS
+================================================================================
+
+Symbol  |  Name     |  Your specific meaning
+--------|-----------|------------------------------------------------------
+ξ       |  xi       |  Horizon-normalized coordinate — the core framework
+Ω_m     |  omega-m  |  Matter density parameter — the physical signal
+Ω_Λ     |  omega-Λ  |  Dark energy density — NOT modified in your work
+Λ       |  lambda   |  Cosmological constant — kept as-is in ΛCDM
+σ       |  sigma    |  Statistical significance (5σ tension → 1σ residual)
+σ₈      |  sigma-8  |  Matter clustering amplitude — S₈ tension tie-breaker
+χ²      |  chi-sq   |  Fit quality — your primary statistical tool
+Δχ²     |  delta    |  Improvement when adding parameters (0.12 = nothing)
+χ²_ν    |  chi-nu   |  Chi-sq per degree of freedom (1.09 = good fit)
+μ       |  mu       |  UHA: cosmic scale factor (epoch encoding)
+σ(UHA)  |  sigma    |  UHA: Morton spatial encoding [0,1]
+Δ       |  delta    |  Change/difference (ΔH₀, Δχ², Δ tension)
+ρ       |  rho      |  Density — underlies all Ω parameters
+τ       |  tau      |  Optical depth — background CMB context
+
+================================================================================
+END OF GREEK ALPHABET REFERENCE
+================================================================================

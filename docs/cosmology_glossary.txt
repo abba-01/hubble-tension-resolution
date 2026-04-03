@@ -1,0 +1,299 @@
+================================================================================
+COSMOLOGY GLOSSARY — WORKING VOCABULARY
+Eric D. Martin | Built from Paper 1 & Paper 2 (MNRAS + Zenodo)
+2026-03-28
+================================================================================
+
+Terms are ordered from foundational to specialized. Each entry has:
+  TERM — formal definition
+  Plain talk: what it actually means in one sentence
+  In your work: how it shows up in your papers
+
+--------------------------------------------------------------------------------
+H₀  (Hubble Constant)
+  Formal: The current rate of expansion of the universe, in km/s/Mpc.
+  Plain talk: How fast two galaxies drift apart per megaparsec of distance
+  between them. The "speed of space."
+  In your work: "Planck yields H₀ = 67.4 ± 0.5; SH0ES yields 73.04 ± 1.04.
+  The 5σ discrepancy between them is called the Hubble tension — which we show
+  is 90% a coordinate artifact."
+
+--------------------------------------------------------------------------------
+Hubble Tension
+  Formal: The ~5σ discrepancy between early-universe (CMB) and late-universe
+  (distance ladder) measurements of H₀.
+  Plain talk: Two groups measuring the same thing with different rulers keep
+  getting different answers. The tension is the argument about whose ruler is right.
+  In your work: "The reported 5σ Hubble tension is widely interpreted as a
+  breakdown of ΛCDM. We demonstrate that ~90% of it is a frame-mixing artifact."
+
+--------------------------------------------------------------------------------
+ΛCDM  (Lambda-Cold Dark Matter)
+  Formal: The standard cosmological model. Lambda (Λ) = cosmological constant
+  (dark energy). CDM = cold dark matter. Together they describe ~95% of the
+  universe's energy content.
+  Plain talk: The "textbook universe" — the model everyone has been using since
+  the late 1990s. It works remarkably well but is cracking under precision data.
+  In your work: "Planck ΛCDM predicts Ω_m = 0.315. Our ξ-normalized BAO
+  analysis finds Ω_m = 0.268–0.295, a genuine deficit below the ΛCDM baseline."
+
+--------------------------------------------------------------------------------
+CMB  (Cosmic Microwave Background)
+  Formal: Thermal radiation left over from recombination ~380,000 years after
+  the Big Bang. Planck satellite measures it to extraordinary precision.
+  Plain talk: The afterglow of the Big Bang — the oldest light we can see,
+  now cooled to 2.725 K. It's the "early universe" side of the tension.
+  In your work: "Planck CMB H₀ = 67.4 is the early-universe anchor. SH0ES
+  measures the late universe. Comparing them across incompatible H₀-dependent
+  frames produces the artifact."
+
+--------------------------------------------------------------------------------
+BAO  (Baryon Acoustic Oscillations)
+  Formal: Frozen sound waves from the early universe, imprinted as a
+  characteristic scale (~150 Mpc) in the distribution of galaxies.
+  Plain talk: A ruler baked into the cosmos. Sound waves rippled through the
+  hot early plasma, then froze when the universe cooled. That frozen wavelength
+  shows up in galaxy clustering today — giving us a known scale to measure
+  distances.
+  In your work: "Using DESI 2024/25 BAO data, we fit a χ² minimizer with
+  self-consistent sound-horizon scaling r_s(Ω_m) and find Ω_m = 0.268."
+
+--------------------------------------------------------------------------------
+DESI  (Dark Energy Spectroscopic Instrument)
+  Formal: Fiber-optic spectrograph on the Mayall 4m telescope at Kitt Peak.
+  DR1 = first public data release (2024). DR2 = 2025 release.
+  Plain talk: A machine with 5,000 robotic fiber positioners that can take
+  spectra of 5,000 galaxies simultaneously. Currently the most precise BAO
+  dataset in existence.
+  In your work: "DESI DR1 BAO data span 7 redshift bins from z=0.295 to z=2.33.
+  DR1 independently reports Ω_m = 0.295 ± 0.010 — consistent with our result."
+
+--------------------------------------------------------------------------------
+ξ  (xi — "KSEE")
+  Formal: Horizon-normalized coordinate. ξ(z) = d_c(z) / d_H, where d_c is
+  comoving distance and d_H = c/H₀ is the Hubble horizon distance.
+  Plain talk: A way to express distances as a fraction of the observable
+  universe's size — instead of in Mpc (which bakes H₀ into every number).
+  The key insight: because both numerator and denominator contain 1/H₀, they
+  cancel exactly, and ξ is H₀-independent.
+  In your work: "By applying ξ-normalization, the H₀ factor cancels exactly
+  for redshift-derived distances. This removes 90% of the apparent tension as
+  a coordinate artifact."
+
+--------------------------------------------------------------------------------
+d_c  (Comoving Distance)
+  Formal: Distance between two points in space measured in coordinates that
+  expand with the universe — so it stays constant as space stretches.
+  Plain talk: Distance with the universe's expansion factored out. A ruler
+  that doesn't stretch. d_c ∝ 1/H₀, which is why it carries the H₀ artifact.
+  In your work: "For redshift-derived distances, d_c ∝ 1/H₀ and d_H ∝ 1/H₀,
+  so ξ is exactly H₀-independent."
+
+--------------------------------------------------------------------------------
+d_H  (Hubble Horizon / Hubble Distance)
+  Formal: d_H = c / H₀. The distance at which the recession velocity equals
+  the speed of light in a flat, static approximation.
+  Plain talk: The "edge of what we can reach." Also carries 1/H₀ — which is
+  exactly why it cancels when you divide d_c by d_H in the ξ construction.
+  In your work: "ξ(z) = d_c(z) / d_H — the ratio eliminates H₀ dependence."
+
+--------------------------------------------------------------------------------
+Ω_m  (Matter Density Parameter — "Omega-m")
+  Formal: The fraction of the universe's critical energy density contributed
+  by matter (baryonic + dark matter). Planck ΛCDM: Ω_m = 0.315.
+  Plain talk: "How much stuff is there?" Expressed as a fraction of the
+  total energy budget. 0.315 means 31.5% of the universe is matter.
+  In your work: "Our best-fit Ω_m = 0.268 (7-bin D_M/r_s analysis, Δχ² = 7.06
+  vs Planck ΛCDM). The matter density deficit is confirmed by DESI DR1
+  (Ω_m = 0.295), DESI DR2 (~0.304), and S8/σ₈ weak lensing."
+
+--------------------------------------------------------------------------------
+Ω_Λ  (Dark Energy Density Parameter — "Omega-Lambda")
+  Formal: The fraction of critical density from the cosmological constant Λ
+  (dark energy). Planck: Ω_Λ ≈ 0.685.
+  Plain talk: "How much of the universe is the mysterious push." 68.5% of
+  the energy in the universe is something we don't understand — it's just
+  making space expand faster over time.
+  In your work: Not directly constrained here; appears in the ξ framework as
+  (1 - Ω_m) in the flat-universe constraint.
+
+--------------------------------------------------------------------------------
+w₀, wₐ  (Dark Energy Equation of State — CPL parametrization)
+  Formal: w₀ = dark energy pressure-to-density ratio today; wₐ = its
+  time evolution. Cosmological constant: w₀ = -1, wₐ = 0.
+  Plain talk: The personality of dark energy. If w₀ = -1 exactly and wₐ = 0,
+  dark energy is boring (just a constant). If w₀ ≠ -1 or wₐ ≠ 0, dark energy
+  is "evolving" — which would be major new physics.
+  In your work: "Adding w₀wₐ freedom reduces χ² by only 0.12 for two additional
+  parameters (p = 0.94). The dark energy question remains open — not ruled in."
+
+--------------------------------------------------------------------------------
+CPL  (Chevallier-Polarski-Linder parametrization)
+  Formal: w(a) = w₀ + wₐ(1-a), where a = 1/(1+z) is the scale factor.
+  A two-parameter way to describe evolving dark energy.
+  Plain talk: The standard vocabulary for describing dark energy that changes
+  over time. Think of it as a two-dial knob: w₀ sets where dark energy is now,
+  wₐ sets how fast it's changing.
+  In your work: "The general w₀wₐ dark energy parametrization (CPL; Chevallier
+  2001, Linder 2003) enters E(z) as the third component after Ω_m and radiation."
+
+--------------------------------------------------------------------------------
+r_s  (Sound Horizon)
+  Formal: The distance sound waves traveled in the early plasma before
+  recombination froze them. ~147 Mpc (Planck fiducial).
+  Plain talk: The frozen wavelength of the cosmic sound wave. It's the BAO
+  ruler's physical length — the thing you measure ratios against. Getting
+  r_s wrong (by holding it fixed while varying Ω_m) inverts your fit.
+  In your work: "A critical methodological requirement: r_s must vary
+  self-consistently with Ω_m. Fixing r_s at the Planck fiducial while
+  varying Ω_m inverts the sign of the fit, producing spurious results."
+
+--------------------------------------------------------------------------------
+D_M/r_s  (Transverse Comoving Distance ratio)
+  Formal: The ratio of transverse comoving distance to the sound horizon.
+  The primary BAO observable — dimensionless and H₀-independent by construction.
+  Plain talk: "How many sound-horizon rulers fit across this slice of sky?"
+  The clean BAO measurement: you observe it in the data and compare to your
+  model prediction. When your model is off, the ratios don't line up.
+  In your work: "We apply ξ-normalization to all 7 DESI DR1 BAO bins via
+  D_M/r_s values, fitting a χ² minimizer with self-consistent r_s(Ω_m) scaling."
+
+--------------------------------------------------------------------------------
+χ²  (Chi-Squared — "KY-squared")
+  Formal: A statistical goodness-of-fit measure. χ² = Σ [(observed - predicted)²
+  / σ²]. Lower is better. χ²_ν = χ²/degrees of freedom; ~1.0 is a good fit.
+  Plain talk: The scoreboard. How badly does the model miss the data points,
+  weighted by how sure you are of each data point? χ² = 6.5 is good.
+  χ² = 13.6 means your model is being rejected by the data.
+  In your work: "Planck ΛCDM: χ² = 13.57 (χ²_ν = 2.26, rejected). Our
+  Ω_m-free fit: χ² = 6.51 (χ²_ν = 1.09, good fit). Δχ² = 7.06."
+
+--------------------------------------------------------------------------------
+Δχ²  (Delta Chi-Squared)
+  Formal: The improvement in χ² when adding parameters to a model.
+  For 2 extra parameters: Δχ² > 4 is ~2σ; > 9 is ~3σ.
+  Plain talk: "Was it worth adding that parameter?" If Δχ² = 7, yes, adding
+  that degree of freedom genuinely helps. If Δχ² = 0.12, the model is just
+  fitting noise — don't add the parameter.
+  In your work: "Adding w₀wₐ: Δχ² = 0.12 for 2 parameters (p = 0.94).
+  Adding Ω_m freedom: Δχ² = 7.06. The latter is justified; the former is not."
+
+--------------------------------------------------------------------------------
+σ  (Sigma — significance level)
+  Formal: Standard deviations from the mean. In cosmology: 1σ = 68% confidence,
+  2σ = 95%, 3σ = discovery hint, 5σ = detection standard.
+  Plain talk: "How shocked should I be?" 1σ = happens all the time. 3σ =
+  interesting, probably real. 5σ = call a press conference.
+  In your work: "The Hubble tension is reported at 5σ. After ξ-normalization,
+  the physical residual is ~1σ (a matter density deficit). The 5σ was mostly
+  coordinate artifact."
+
+--------------------------------------------------------------------------------
+S₈  (S8 parameter — "S-eight")
+  Formal: S₈ = σ₈ × (Ω_m / 0.3)^0.5. A combined measure of the amplitude
+  of matter clustering weighted by matter density.
+  Plain talk: "How clumpy is the universe?" High S₈ = more structure, more
+  clusters. Weak lensing surveys consistently find the universe less clumpy
+  than Planck predicts — the "S₈ tension."
+  In your work: "The S₈ tension (~2–3σ below Planck) is not a separate crisis
+  but a secondary manifestation of the same Ω_m deficit. Lower Ω_m forces
+  lower S₈ mathematically."
+
+--------------------------------------------------------------------------------
+σ₈  (Sigma-8 — "sigma-eight")
+  Formal: The amplitude of matter density fluctuations on scales of 8 h⁻¹ Mpc.
+  Plain talk: The "lumpiness dial" of the universe. How large are the density
+  variations on a specific scale? Planck predicts more lumpiness than we observe.
+  In your work: "The S₈ parameter, σ₈(Ω_m/0.3)^0.5, measures matter clustering
+  amplitude and trends 2–3σ below Planck ΛCDM in weak lensing surveys."
+
+--------------------------------------------------------------------------------
+E(z)  (Dimensionless Hubble Parameter)
+  Formal: E(z) = H(z)/H₀. Describes how the universe's expansion rate evolves
+  with redshift. For flat ΛCDM: E(z) = √[Ω_m(1+z)³ + Ω_Λ].
+  Plain talk: The expansion history of the universe, normalized to today's rate.
+  The function you integrate to get distances. Adding w₀wₐ modifies the Ω_Λ
+  term — it's where dark energy evolution enters the math.
+  In your work: "E(z) = √[Ω_m(1+z)³ + (1-Ω_m)(1+z)^{3(1+w₀+wₐ)} × e^{-3wₐz/(1+z)}]
+  — the general CPL form used in all fits."
+
+--------------------------------------------------------------------------------
+z  (Redshift)
+  Formal: z = (λ_observed - λ_emitted) / λ_emitted. A measure of how much
+  the universe has expanded since light was emitted; also a proxy for distance
+  and lookback time.
+  Plain talk: How far back in time you're looking. z=0 is now. z=0.5 means
+  the universe was 2/3 its current size. z=1100 is the CMB (the Big Bang's
+  afterglow). DESI DR1 spans z = 0.295 to 2.33.
+  In your work: "All 7 DESI DR1 BAO bins spanning 0.295 ≤ z ≤ 2.33. The LRG1
+  bin at z = 0.51 shows a persistent residual of +1.80σ."
+
+--------------------------------------------------------------------------------
+LRG  (Luminous Red Galaxy)
+  Formal: Massive, passively evolving elliptical galaxies with high luminosity
+  used as tracers for BAO measurements. DESI uses several LRG samples (LRG1,
+  LRG2, LRG3) at different redshift slices.
+  Plain talk: Old, bright, boring galaxies. They're boring on purpose —
+  they stopped forming stars, so they don't change much. That makes them
+  reliable distance markers.
+  In your work: "The LRG1 bin at z = 0.51 shows a persistent residual of
+  +1.80σ at the corrected best-fit Ω_m = 0.268."
+
+--------------------------------------------------------------------------------
+Frame-Mixing Artifact
+  Formal: A systematic bias arising from comparing datasets computed in
+  coordinate systems that depend on different assumed values of H₀.
+  Plain talk: Comparing two rulers where one ruler's inch is defined using
+  H₀=67 and the other's is defined using H₀=73. They'll never agree — not
+  because the universe disagrees, but because the rulers are built differently.
+  In your work: "The reported 5σ tension is a frame-mixing artifact: a
+  mathematical consequence of comparing datasets in incompatible H₀-dependent
+  coordinate systems. ξ-normalization removes it."
+
+--------------------------------------------------------------------------------
+Distance Ladder
+  Formal: A hierarchical sequence of distance measurement methods, each
+  calibrated against the previous, used to measure H₀ locally.
+  Plain talk: A chain of distance measurements from nearby to far, where each
+  rung calibrates the next. Cepheid variables → Type Ia supernovae → cosmological
+  distances. SH0ES uses this; Planck doesn't.
+  In your work: "JWST measures the distance ladder artifact more precisely
+  within a fixed H₀ frame; it does not test whether that frame and the
+  Planck frame occupy compatible coordinates."
+
+--------------------------------------------------------------------------------
+SH0ES  (Supernovae H₀ for the Equation of State)
+  Formal: Adam Riess et al.'s program measuring H₀ via the Cepheid-calibrated
+  Type Ia supernova distance ladder. Current result: H₀ = 73.04 ± 1.04.
+  Plain talk: The "high H₀ camp." Riess and colleagues using Hubble (and now
+  JWST) to trace distances through Cepheid stars and supernovae.
+  In your work: "SH0ES yields H₀ = 73.04 ± 1.04. This is one end of the
+  5σ tension — the other being Planck CMB at 67.4."
+
+--------------------------------------------------------------------------------
+Euclid DR1  (Euclid First Data Release — expected October 2026)
+  Formal: The first public data release from ESA's Euclid space telescope,
+  which will provide precision weak lensing and BAO measurements across
+  a 15,000 deg² survey to z~2.
+  Plain talk: The "eclipse event" for this work. Euclid will deliver
+  independent precision constraints on Ω_m and S₈. If Euclid confirms
+  Ω_m < 0.315 and S₈ below the Planck prediction, it validates both
+  layers of the decomposition.
+  In your work: "Confirmation of both signals awaits Euclid DR1.
+  The eclipse date: October 2026."
+
+--------------------------------------------------------------------------------
+Weak Lensing
+  Formal: The subtle distortion of background galaxy shapes by the
+  gravitational influence of foreground mass. Used to map dark matter
+  and measure σ₈ and Ω_m.
+  Plain talk: Gravity bends light. Even "weak" bending by large-scale
+  structure slightly distorts the apparent shapes of distant galaxies.
+  Measuring those distortions tells you how much matter (dark and visible)
+  is in between.
+  In your work: "The S₈/σ₈ weak lensing signal from KiDS-1000 and DES Y3
+  trends 2–3σ below Planck ΛCDM — consistent with the Ω_m deficit."
+
+================================================================================
+END OF GLOSSARY
+================================================================================
