@@ -1,0 +1,7 @@
+uha_id,entity_type,operators,notes
+UHA::NGC::4258::J121857.5+471814::ICRS2016,anchor,"maser_geometry, distance_modulus, ladder_anchor_weight",Primary maser distance anchor used by SH0ES
+UHA::LMC::DEBs::J052039-694536::ICRS2016,anchor,"DEB_distance, reddening_law, ladder_anchor_weight",LMC detached eclipsing binaries distance anchor
+UHA::MW::Cepheids_GaiaEDR3::J0000+0000::ICRS2016,anchor,"parallax_zero_point, crowding_correction, PLZ_slope",Milky Way Cepheid parallax set (Gaia EDR3)
+UHA::NGC4258::HII_b15::RA184.73279_DEC47.30519::ICRS2000,sub-anchor,"metallicity_gradient, PLZ_slope",H II region metallicity (PP04) from Yuan+2022 Table 4
+UHA::NGC4258::HII_b16::RA184.73413_DEC47.30311::ICRS2000,sub-anchor,"metallicity_gradient, PLZ_slope",H II region metallicity (PP04) from Yuan+2022 Table 4
+UHA::HOST::SN2011fe::J210.774+54.2737::ICRS2000,host,"SN_color_law, selection_effects, Malmquist_bias",Example host mapping; replace with exact host name/coords from FITRES

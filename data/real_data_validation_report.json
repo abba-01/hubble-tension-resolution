@@ -1,0 +1,49 @@
+{
+  "data_sources": {
+    "planck": {
+      "samples": 3722,
+      "H0_mean": 67.4213828219024,
+      "H0_std": 0.4045537893005862
+    },
+    "shoes": {
+      "samples": 10000,
+      "H0_mean": 73.09764919297993,
+      "H0_std": 0.9514819816468989
+    }
+  },
+  "initial_tension": {
+    "delta_H0_km_s": 5.676266371077531,
+    "significance_sigma": 5.490066767250858
+  },
+  "convergence_results": {
+    "converged": true,
+    "final_H0": 68.29043335758159,
+    "final_uncertainty": 0.37340227392330444,
+    "resolutions_tested": [
+      8,
+      16,
+      21
+    ]
+  },
+  "resolution_progression": {
+    "8_bit": {
+      "delta_t": 0.005191397460045089,
+      "H0": 68.29043335758158,
+      "sigma": 0.3747173008834501,
+      "improvement": Infinity
+    },
+    "16_bit": {
+      "delta_t": 0.0035217587423678988,
+      "H0": 68.29043335758159,
+      "sigma": 0.3736105788662053,
+      "improvement": 0.0016696387176771904
+    },
+    "21_bit": {
+      "delta_t": 0.00351196452285403,
+      "H0": 68.29043335758159,
+      "sigma": 0.37340227392330444,
+      "improvement": 9.794219513868923e-06
+    }
+  },
+  "final_assessment": {
+    "tension_resolved": 

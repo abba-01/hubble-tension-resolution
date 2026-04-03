@@ -1,0 +1,18 @@
+The Hubble tension is the discrepancy between two methods of measuring the universe's expansion rate: one based on observations of the early universe's afterglow (the cosmic microwave background, CMB) and the other based on observing distant, nearby galaxies and supernovae today. The CMB-based measurement suggests a slower expansion, while the local, modern observations indicate a faster rate, a contradiction that points to potentially missing physics in our cosmological models. 
+Two Methods, Different Results
+Early Universe Measurements (CMB): This method uses the cosmic microwave background (CMB)—the faint afterglow of the Big Bang—to extrapolate the universe's expansion rate. This calculation is done within the framework of the standard Lambda-Cold Dark Matter (ΛCDM) model, a successful cosmological model. 
+Local Universe Measurements: This method directly measures the universe's expansion by observing Cepheid variable stars and Type Ia supernovae in nearby galaxies. These "standard candles" have known intrinsic brightness, allowing astronomers to determine their distance and, combined with their redshift (how much their light is stretched by expansion), to calculate the current expansion rate. 
+The Discrepancy
+The problem is that these two approaches yield different values for the Hubble constant, the rate at which the universe is expanding: 
+CMB-derived value: Approximately 67.4 km/s/Mpc.
+Local measurements: Around 73-74 km/s/Mpc.
+This roughly 10% difference is significant, as careful error analyses show the discrepancy is unlikely to be due to measurement errors. 
+Why It Matters
+The Hubble tension challenges our fundamental understanding of the universe and its evolution. It suggests that our standard cosmological model, which assumes the laws of physics remain constant, may be incomplete. 
+Potential Explanations
+Scientists are exploring several possibilities for the cause of the tension, all of which could indicate new physics: 
+Early Dark Energy: A burst of dark energy in the early universe that is not accounted for in the standard model. 
+Exotic Particles: The existence of new, theoretical particles, such as axions or sterile neutrinos, that could influence the universe's expansion. 
+Modifications to Gravity: Changes to Einstein's theory of general relativity, the framework for understanding gravity and space-time. 
+Ongoing Research
+The James Webb Space Telescope (JWST) and the upcoming Nancy Grace Roman Space Telescope are being used to gather more data to help resolve this mystery. New measurements from these observatories, as well as the Euclid observatory, are crucial for confirming the accuracy of the current measurements and determining if the discrepancy is a true signal of new physics. 

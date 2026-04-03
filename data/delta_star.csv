@@ -1,0 +1,16 @@
+pair,delta_star_km_s_Mpc
+DES-IDL vs SH0ES,2.08
+Planck18 vs SH0ES,2.05
+DES-IDL vs MCP,1.33
+Planck18 vs MCP,1.3
+DES-IDL vs TDCOSMO,1.03
+Planck18 vs TDCOSMO,1.0
+Planck18 vs DES-IDL,0.0
+Planck18 vs TRGB,0.0
+DES-IDL vs TRGB,0.0
+SH0ES vs TRGB,0.0
+SH0ES vs TDCOSMO,0.0
+SH0ES vs MCP,0.0
+TRGB vs TDCOSMO,0.0
+TRGB vs MCP,0.0
+TDCOSMO vs MCP,0.0

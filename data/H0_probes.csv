@@ -1,0 +1,7 @@
+probe_id,class,n,u,notes,interval_low,interval_high
+Planck18,early,67.4,0.5,CMB ΛCDM (Planck 2018),66.9,67.9
+DES-IDL,early,67.19,0.65,DES-Y5 SN + DESI BAO inverse distance ladder,66.53999999999999,67.84
+SH0ES,late,73.04,1.04,Cepheid+SN distance ladder,72.0,74.08000000000001
+TRGB,late,69.8,2.5,CCHP TRGB ladder (NU-summed),67.3,72.3
+TDCOSMO,late,77.1,7.2,"Time-delay lenses, flexible mass",69.89999999999999,84.3
+MCP,late,73.5,3.0,Megamaser Cosmology Project,70.5,76.5

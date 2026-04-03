@@ -1,0 +1,105 @@
+# Single Source of Truth for S8–UHA pipeline
+project:
+  name: s8-uha-ssot
+  version: 0.1.0
+  claim: >
+    Using UHA normalization + U/N re-anchoring, the observed discrepancy in S8
+    between Planck PR3 and Stage-III weak-lensing surveys is referential rather
+    than physical at alpha=0.05.
+
+anchors:
+  # UHA physical anchors (language-free units)
+  c_m_per_s: 299792458             # exact
+  f21_Hz: 1420405751.77            # 21 cm hyperfine transition (Hz)
+
+uha_cosmoid_default:
+  # Planck 2018 base ΛCDM (illustrative defaults; exacts come from fetched tables)
+  # These seed a CosmoID fingerprint for address reconstruction
+  H0_km_s_Mpc: 67.66
+  Omega_m: 0.3153
+  Omega_b: 0.0493
+  Omega_Lambda: 0.6847
+  n_s: 0.9649
+  sigma8: 0.8102
+  source: Planck 2018 base TTTEEE+lowE+lensing
+
+datasets:
+  planck_pr3:
+    doi: 10.5270/esa-gb3sw1a
+    description: Planck PR3 Cosmology products (likelihood code/data + parameter tables)
+    provider: ESA Planck Legacy Archive
+    files:
+      - name: COM_CosmoParams_fullGrid_R3.01.zip
+        url: https://pla.esac.esa.int
+        via: https://esdcdoi.esac.esa.int/doi/html/data/astronomy/planck/Cosmology.html
+      - name: COM_Likelihood_Code-v3.0_R3.01.tar.gz
+        url: https://pla.esac.esa.int
+        via: https://esdcdoi.esac.esa.int/doi/html/data/astronomy/planck/Cosmology.html
+      - name: COM_Likelihood_Data-baseline_R3.00.tar.gz
+        url: https://pla.esac.esa.int
+        via: https://esdcdoi.esac.esa.int/doi/html/data/astronomy/planck/Cosmology.html
+      - name: COM_PowerSpect_CMB-base-plikHM-TTTEEE-lowl-lowE-lensing-minimum-theory_R3.01.txt
+        url: https://pla.esac.esa.int
+        via: https://esdcdoi.esac.esa.int/doi/html/data/astronomy/planck/Cosmology.html
+
+  kids_1000_cosmic_shear:
+    description: KiDS-1000 cosmic shear release (Asgari+2021)
+    provider: KiDS DR4
+    url_tarball: https://kids.strw.leidenuniv.nl/DR4/data_files/KiDS1000_cosmic_shear_data_release.tgz
+    files_in_tarball:
+      - README
+      - chains/  # Multinest posterior samples
+      - data_vectors/*.fits
+      - covariances/*.fits
+      - nz/*.fits
+    citation: Asgari et al. (2021), KiDS-1000 Cosmology: Cosmic shear constraints
+
+  des_y3_three_by_two:
+    description: DES Y3 3x2pt SACC data vector + covariance + tracers
+    provider: DES (public mirrors via CosmoSIS/Cobaya)
+    primary:
+      url: https://github.com/handley-lab/des_y3_data/releases/latest
+      note: SACC FITS extracted from CosmoSIS Standard Library
+    alt_reference:
+      url: https://www.darkenergysurvey.org/des-year-3-cosmology-results-papers/
+    expected_files:
+      - likelihood/des-y3/y3_5x2_maglim_UNBLIND_07202021_120721_bestfit3x2.fits
+
+# Pipelines define ordered steps that consume the above datasets.
+pipelines:
+  - id: fetch
+    script: scripts/fetch.py
+    outputs:
+      - checksums/*
+      - manifests/fetch_manifest.json
+
+  - id: compute_s8_planck
+    script: scripts/compute_s8_from_planck.py
+    inputs:
+      - data/raw/planck/*
+    outputs:
+      - data/processed/planck_s8.csv
+
+  - id: kids_ingest
+    script: scripts/ingest_kids1000.py
+    inputs:
+      - data/raw/kids1000/*
+    outputs:
+      - data/processed/kids1000_s8.csv
+
+  - id: des_ingest
+    script: scripts/ingest_desy3.py
+    inputs:
+      - data/raw/des_y3/*
+    outputs:
+      - data/processed/desy3_s8.csv
+
+  - id: reanchor_diagnose
+    script: scripts/reanchor_s8.py
+    inputs:
+      - data/processed/planck_s8.csv
+      - data/processed/kids1000_s8.csv
+      - data/processed/desy3_s8.csv
+    outputs:
+      - data/processed/s8_reanchor_diagnosis.json
+      - data/processed/s8_reanchor_report.md
