@@ -1,6 +1,15 @@
 # Hubble Tension Bootstrap Validation
 
-> **For the master catalog of this research program** (canonical pointers, retired/archived list, four-metric audit, reconciliation decisions), see [`hubble-sanity`](https://github.com/aybllc-archive/hubble-sanity) (private aybllc-archive).
+> ## Sanity check FIRST
+>
+> **Before citing any numeric claim from this repo (91% / 97.2% / 97.35% / 22.03% / 0.966σ / 99.8% / 100% / Δ_T values / σ values) or modifying methodology, run the sanity check.** These metrics measure different things on the same disagreement; many are mislabeled, retracted, or fabricated-target across the 12 Hubble repos.
+>
+> **Where:** [`hubble-sanity`](https://github.com/aybllc-archive/hubble-sanity) (private aybllc-archive).
+>
+> **What to read:** `INDEX.md` first (60-second read), then `PILE_claims.md` for the specific number you intend to use. Each claim has an audit status: `consistent` / `contradicted-by` / `corrected` / `unverified` / `fabricated-target` / `mislabeled`.
+>
+> **Why this triggers:** the program has a documented history of multi-repo claim drift. If you skip this step, you risk citing a retracted number, a mislabeled formula, or a target that was never computed. The audit takes <2 min; recovering from a published mistake takes months.
+
 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17435578.svg)](https://doi.org/10.5281/zenodo.17435578)
