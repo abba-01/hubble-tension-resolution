@@ -1,5 +1,8 @@
 # Hubble Tension Bootstrap Validation
 
+> **For the master catalog of this research program** (canonical pointers, retired/archived list, four-metric audit, reconciliation decisions), see [`hubble-sanity`](https://github.com/aybllc-archive/hubble-sanity) (private aybllc-archive).
+
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17435578.svg)](https://doi.org/10.5281/zenodo.17435578)
 
 **⚠️ IMPORTANT: Read [CLARIFICATION.md](CLARIFICATION.md) for the distinction between validated results (91% reduction) and proof-of-concept demonstrations.**
